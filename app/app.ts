@@ -2,26 +2,29 @@ import { Component, ViewChild } from '@angular/core';
 import { App, ionicBootstrap, Platform, Nav } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
-import { Page1 } from './pages/page1/page1';
-import { Page2 } from './pages/page2/page2';
-
+import { Aktuelles } from './pages/aktuelles/aktuelles';
+import { Termine } from './pages/termine/termine';
+import { Kontakt } from './pages/kontakt/kontakt';
+ 
 @Component({
   templateUrl: 'build/app.html'
 })
+
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  rootPage: any = Aktuelles;
 
-  pages: Array<{title: string, component: any}>
+  pages: Array<{title: string, icon: string, component: any}>
 
   constructor(private platform: Platform) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Page uno', component: Page1 },
-      { title: 'Page dos', component: Page2 }
+        { title: 'Aktuelles', icon: 'facebook', component: Aktuelles },
+        { title: 'Termine', icon: 'calendar', component: Termine },
+        { title: 'Kontakt', icon: 'contact', component: Kontakt }
     ];
 
   }

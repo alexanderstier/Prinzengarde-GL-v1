@@ -26,10 +26,16 @@
 // are different per mode.
 
 $colors: (
-  primary:    #387ef5,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222,
+  primary:    #fff,
+  secondary:  #E2001A,
+  danger:     #FFE000,
+  light:      #E2001A,
+  dark:       #9B0012,
   favorite:   #69BB7B
 );
+
+$toolbar-background: #E2001A;
+$link-color: color($colors, secondary); 
+$link-md-color: color($colors, secondary); 
+$link-ios-color: color($colors, secondary); 
+$link-wp-color: color($colors, secondary); 
