@@ -10,17 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var ionic_angular_1 = require('ionic-angular');
-var Kontakt = (function () {
-    function Kontakt(navController) {
+var KontaktPage = (function () {
+    function KontaktPage(navController) {
         this.navController = navController;
         this.title = 'Kontakt';
     }
-    Kontakt = __decorate([
+    KontaktPage = __decorate([
         core_1.Component({
             templateUrl: 'build/pages/kontakt/kontakt.html'
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.NavController])
-    ], Kontakt);
-    return Kontakt;
+    ], KontaktPage);
+    return KontaktPage;
 }());
-exports.Kontakt = Kontakt;
+exports.KontaktPage = KontaktPage;

@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'build/pages/aktuelles/aktuelles.html'
 })
 
-export class Aktuelles {
+export class AktuellesPage {
 
     title = 'Aktuelles';
 

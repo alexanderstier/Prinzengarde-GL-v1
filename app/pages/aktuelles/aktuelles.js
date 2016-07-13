@@ -10,17 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var ionic_angular_1 = require('ionic-angular');
-var Aktuelles = (function () {
-    function Aktuelles(navController) {
+var AktuellesPage = (function () {
+    function AktuellesPage(navController) {
         this.navController = navController;
         this.title = 'Aktuelles';
     }
-    Aktuelles = __decorate([
+    AktuellesPage = __decorate([
         core_1.Component({
             templateUrl: 'build/pages/aktuelles/aktuelles.html'
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.NavController])
-    ], Aktuelles);
-    return Aktuelles;
+    ], AktuellesPage);
+    return AktuellesPage;
 }());
-exports.Aktuelles = Aktuelles;
+exports.AktuellesPage = AktuellesPage;

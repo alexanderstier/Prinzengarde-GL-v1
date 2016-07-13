@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'build/pages/kontakt/kontakt.html'
 })
 
-export class Kontakt {
+export class KontaktPage {
 
     title = 'Kontakt';
 

@@ -10,8 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var ionic_angular_1 = require('ionic-angular');
-var Termine = (function () {
-    function Termine(nav, navParams) {
+var TerminePage = (function () {
+    function TerminePage(nav, navParams) {
         this.nav = nav;
         this.title = 'Termine';
         // If we navigated to this page, we will have an item available as a nav param
@@ -28,18 +28,18 @@ var Termine = (function () {
             });
         }
     }
-    Termine.prototype.itemTapped = function (event, item) {
+    TerminePage.prototype.itemTapped = function (event, item) {
         // That's right, we're pushing to ourselves!
-        this.nav.push(Termine, {
+        this.nav.push(TerminePage, {
             item: item
         });
     };
-    Termine = __decorate([
+    TerminePage = __decorate([
         core_1.Component({
             templateUrl: 'build/pages/termine/termine.html'
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.NavController, ionic_angular_1.NavParams])
-    ], Termine);
-    return Termine;
+    ], TerminePage);
+    return TerminePage;
 }());
-exports.Termine = Termine;
+exports.TerminePage = TerminePage;

@@ -7,8 +7,8 @@
 
     Weitere Informationen zu Paketmanifestdateien finden Sie unter http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="cutiundstier.de.PrinzengardeBergischGladbach" Publisher="CN=Apache Cordova Team" Version="1.0.0.1" ProcessorArchitecture="x86" />
-  <mp:PhoneIdentity PhoneProductId="2aff9890-4831-11e6-ac81-23f2dbaad0bf" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="cutiundstier.de.PrinzengardeBergischGladbach" Publisher="CN=Apache Cordova Team" Version="1.0.0.1" ProcessorArchitecture="arm" />
+  <mp:PhoneIdentity PhoneProductId="c4741a60-44ed-11e6-9bbe-2b2e42b1400f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Prinzengarde Bergisch Gladbach</DisplayName>
     <PublisherDisplayName>cuti and stier gbr.</PublisherDisplayName>
@@ -22,7 +22,7 @@
   </Resources>
   <Applications>
     <Application Id="de.cutiundstier.PrinzengardeGL" StartPage="ms-appx-web://cutiundstier.de.prinzengardebergischgladbach/www/index.html">
-      <uap:VisualElements BackgroundColor="#464646" Description="CordovaApp" DisplayName="Prinzengarde-GL" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+      <uap:VisualElements BackgroundColor="transparent" Description="CordovaApp" DisplayName="Prinzengarde-GL" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
         <uap:SplashScreen Image="images\splashscreen.png" />
         <uap:DefaultTile ShortName="Prinzengarde-GL" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
         <uap:InitialRotationPreference>

@@ -14,16 +14,18 @@ var ionic_native_1 = require('ionic-native');
 var aktuelles_1 = require('./pages/aktuelles/aktuelles');
 var termine_1 = require('./pages/termine/termine');
 var kontakt_1 = require('./pages/kontakt/kontakt');
+var mitglieder_1 = require('./pages/mitglieder/mitglieder');
 var MyApp = (function () {
     function MyApp(platform) {
         this.platform = platform;
-        this.rootPage = aktuelles_1.Aktuelles;
+        this.rootPage = aktuelles_1.AktuellesPage;
         this.initializeApp();
         // used for an example of ngFor and navigation
         this.pages = [
-            { title: 'Aktuelles', icon: 'facebook', component: aktuelles_1.Aktuelles },
-            { title: 'Termine', icon: 'calendar', component: termine_1.Termine },
-            { title: 'Kontakt', icon: 'contact', component: kontakt_1.Kontakt }
+            { title: 'Aktuelles', icon: 'paper', component: aktuelles_1.AktuellesPage },
+            { title: 'Termine', icon: 'calendar', component: termine_1.TerminePage },
+            { title: 'Kontakt', icon: 'mail', component: kontakt_1.KontaktPage },
+            { title: 'Mitglieder', icon: 'contact', component: mitglieder_1.MitgliederPage }
         ];
     }
     MyApp.prototype.initializeApp = function () {

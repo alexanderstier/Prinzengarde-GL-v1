@@ -5,7 +5,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'build/pages/termine/termine.html'
 })
 
-export class Termine {
+export class TerminePage {
 
     title = 'Termine';    
     selectedItem: any;
@@ -32,7 +32,7 @@ export class Termine {
 
   itemTapped(event, item) {
     // That's right, we're pushing to ourselves!
-    this.nav.push(Termine, {
+    this.nav.push(TerminePage, {
       item: item
     });
   }

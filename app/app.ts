@@ -2,10 +2,11 @@ import { Component, ViewChild } from '@angular/core';
 import { App, ionicBootstrap, Platform, Nav } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
-import { Aktuelles } from './pages/aktuelles/aktuelles';
-import { Termine } from './pages/termine/termine';
-import { Kontakt } from './pages/kontakt/kontakt';
- 
+import { AktuellesPage } from './pages/aktuelles/aktuelles';
+import { TerminePage } from './pages/termine/termine';
+import { KontaktPage } from './pages/kontakt/kontakt';
+import { MitgliederPage } from './pages/mitglieder/mitglieder';
+
 @Component({
   templateUrl: 'build/app.html'
 })
@@ -13,7 +14,7 @@ import { Kontakt } from './pages/kontakt/kontakt';
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Aktuelles;
+  rootPage: any = AktuellesPage;
 
   pages: Array<{title: string, icon: string, component: any}>
 
@@ -22,9 +23,10 @@ class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-        { title: 'Aktuelles', icon: 'facebook', component: Aktuelles },
-        { title: 'Termine', icon: 'calendar', component: Termine },
-        { title: 'Kontakt', icon: 'contact', component: Kontakt }
+        { title: 'Aktuelles', icon: 'paper', component: AktuellesPage },
+        { title: 'Termine', icon: 'calendar', component: TerminePage },
+        { title: 'Kontakt', icon: 'mail', component: KontaktPage },
+        { title: 'Mitglieder', icon: 'contact', component: MitgliederPage }
     ];
 
   }
