@@ -1,3 +1,19 @@
 .aktuelles {
-     
+    ion-card-content{
+        max-height: 245px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    ion-row {
+        background-color: map-get($colors, light);
+    }
+
+    .expand {
+        max-height: 20000px;
+        transition: max-height 5s ease-in;
+    }
+    .expand_hide {
+        display:none;
+    }
 }

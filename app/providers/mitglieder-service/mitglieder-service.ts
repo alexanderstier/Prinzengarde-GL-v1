@@ -17,6 +17,7 @@ export class MitgliederService {
   }
 
   load() {
+
     if (this.data) {
       // already loaded data
       return Promise.resolve(this.data);
@@ -36,6 +37,7 @@ export class MitgliederService {
           resolve(this.data);
         });
     });
+
   }
 }
 

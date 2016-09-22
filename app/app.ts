@@ -11,7 +11,7 @@ import { MitgliederPage } from './pages/mitglieder/mitglieder';
   templateUrl: 'build/app.html'
 })
 
-class MyApp {
+class PgGlApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = AktuellesPage;
@@ -46,4 +46,4 @@ class MyApp {
   }
 }
 
-ionicBootstrap(MyApp);
+ionicBootstrap(PgGlApp, null, { mode: 'md' });

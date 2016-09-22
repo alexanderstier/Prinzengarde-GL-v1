@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget defaultlocale="de-DE" id="de.cutiundstier.PrinzengardeGL" version="1.0.0" windows-packageVersion="1.1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
+<widget defaultlocale="de-DE" id="de.cutiundstier.PrinzengardeGL" version="1.0.1" windows-packageVersion="1.0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
   <name>Prinzengarde-GL</name>
   <description>Mobiles Informationssystem der Prinzengarde vun 1966 der Grossen Gladbacher KG</description>
   <author email="info@cutiundstier.de" href="http://cutiundstier.de">cuti und stier gbr</author>
@@ -101,7 +101,6 @@
   <plugin name="cordova-plugin-inappbrowser" version="1.4.0" />
   <plugin name="cordova-plugin-device-orientation" version="1.0.3" />
   <plugin name="cordova-plugin-device" version="1.1.2" />
-  <plugin name="cordova-plugin-contacts" version="2.1.0" />
   <plugin name="cordova-plugin-compat" version="1.0.0" />
   <preference name="webviewbounce" value="false" />
   <preference name="UIWebViewBounce" value="false" />

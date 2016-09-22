@@ -7,15 +7,54 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding class="aktuelles">
 
-  <h3>Ionic Menu Starter</h3>
+    <ion-card *ngFor="let post of facebook_feed">
+        
+        <ion-item>
+            <ion-avatar item-left>
+                <ion-img src="{{post.from.picture.data.url}}"></ion-img>
+            </ion-avatar>
+                    
+            <h3>{{post.from.name}}</h3>
+            <p>{{post.created_time | date: 'dd.MM.yyyy HH:mm:ss'}}</p>
+        </ion-item>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+        <h2 padding *ngIf="post.description">{{post.description}}</h2>
 
-  <button secondary menuToggle>Toggle Menu</button>
+        <ion-img src="{{post.full_picture}}" ></ion-img>
+
+        <ion-card-content id="{{post.id}}">
+            <p>{{post.message}}</p>
+        </ion-card-content>
+        <div *ngIf="post.message">
+            <button id="{{post.id}}_button" *ngIf="post.message.length > 570" full secondary (click)="showmore(post.id)">mehr</button>
+        </div>
+
+        <ion-row light>
+            <ion-col>
+                <button secondary clear small>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                    <div *ngIf="post.likes">{{post.likes.data.length}}</div>
+                    <div *ngIf="!post.likes">0</div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button secondary clear small>
+                    <ion-icon name="chatboxes"></ion-icon>
+                    <div *ngIf="post.comments">{{post.comments.data.length}}</div>
+                    <div *ngIf="!post.comments">0</div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button secondary clear small>
+                    <ion-icon name="share"></ion-icon>
+                    <div *ngIf="post.shares">{{post.shares.count}}</div>
+                    <div *ngIf="!post.shares">0</div>
+                </button>
+            </ion-col>
+        </ion-row>
+
+    </ion-card>
 
 </ion-content>
