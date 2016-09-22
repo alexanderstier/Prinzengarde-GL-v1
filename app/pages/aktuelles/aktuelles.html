@@ -28,10 +28,10 @@
             <p>{{post.message}}</p>
         </ion-card-content>
         <div *ngIf="post.message">
-            <button id="{{post.id}}_button" *ngIf="post.message.length > 570" full secondary (click)="showmore(post.id)">mehr</button>
+            <button id="{{post.id}}_button" *ngIf="post.message.length > 570" full secondary (click)="show_more(post.id)">mehr</button>
         </div>
 
-        <ion-row light>
+        <ion-row light (click)="open_facebook(post.id)">
             <ion-col>
                 <button secondary clear small>
                     <ion-icon name="thumbs-up"></ion-icon>
