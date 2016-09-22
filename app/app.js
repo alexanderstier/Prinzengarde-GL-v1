@@ -15,8 +15,8 @@ var aktuelles_1 = require('./pages/aktuelles/aktuelles');
 var termine_1 = require('./pages/termine/termine');
 var kontakt_1 = require('./pages/kontakt/kontakt');
 var mitglieder_1 = require('./pages/mitglieder/mitglieder');
-var MyApp = (function () {
-    function MyApp(platform) {
+var PgGlApp = (function () {
+    function PgGlApp(platform) {
         this.platform = platform;
         this.rootPage = aktuelles_1.AktuellesPage;
         this.initializeApp();
@@ -28,14 +28,14 @@ var MyApp = (function () {
             { title: 'Mitglieder', icon: 'contact', component: mitglieder_1.MitgliederPage }
         ];
     }
-    MyApp.prototype.initializeApp = function () {
+    PgGlApp.prototype.initializeApp = function () {
         this.platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
             ionic_native_1.StatusBar.styleDefault();
         });
     };
-    MyApp.prototype.openPage = function (page) {
+    PgGlApp.prototype.openPage = function (page) {
         // Reset the content nav to have just this page
         // we wouldn't want the back button to show in this scenario
         this.nav.setRoot(page.component);
@@ -43,13 +43,13 @@ var MyApp = (function () {
     __decorate([
         core_1.ViewChild(ionic_angular_1.Nav), 
         __metadata('design:type', ionic_angular_1.Nav)
-    ], MyApp.prototype, "nav", void 0);
-    MyApp = __decorate([
+    ], PgGlApp.prototype, "nav", void 0);
+    PgGlApp = __decorate([
         core_1.Component({
             templateUrl: 'build/app.html'
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.Platform])
-    ], MyApp);
-    return MyApp;
+    ], PgGlApp);
+    return PgGlApp;
 }());
-ionic_angular_1.ionicBootstrap(MyApp);
+ionic_angular_1.ionicBootstrap(PgGlApp, null, { mode: 'md' });
