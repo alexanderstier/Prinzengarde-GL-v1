@@ -16,7 +16,7 @@
     <Applications>
         <Application Id="de.cutiundstier.PrinzengardeGL" StartPage="ms-appx-web://cutiundstier.de.prinzengardebergischgladbach/www/index.html">
             <uap:VisualElements BackgroundColor="transparent" Description="CordovaApp" DisplayName="Prinzengarde-GL" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
-                <uap:SplashScreen BackgroundColor="#e30613" Image="images\splashscreen.png" />
+                <uap:SplashScreen BackgroundColor="#E2001A" Image="images\splashscreen.png" />
                 <uap:DefaultTile ShortName="Prinzengarde-GL" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
                 <uap:InitialRotationPreference>
                     <uap:Rotation Preference="portrait" />

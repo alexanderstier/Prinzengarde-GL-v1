@@ -8,35 +8,40 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var ionic_angular_1 = require('ionic-angular');
+var core_1 = require("@angular/core");
+var ionic_angular_1 = require("ionic-angular");
+var global_vars_1 = require("../../providers/global-vars/global-vars");
 var TerminePage = (function () {
     function TerminePage(nav, navParams) {
         this.nav = nav;
-        this.title = 'Termine';
-        // If we navigated to this page, we will have an item available as a nav param
-        this.selectedItem = navParams.get('item');
-        // Let's populate this page with some filler content for funzies
-        this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-            'american-football', 'boat', 'bluetooth', 'build'];
+        this.nav_title = "Termine";
+        this.title = "Termine";
+        // if we navigated to this page, we will have an item available as a nav param
+        this.selectedItem = navParams.get("item");
+        // let's populate this page with some filler content for funzies
+        this.icons = ["flask", "wifi", "beer", "football", "basketball", "paper-plane",
+            "american-football", "boat", "bluetooth", "build"];
         this.items = [];
         for (var i = 1; i < 11; i++) {
             this.items.push({
-                title: 'Item ' + i,
-                note: 'This is item #' + i,
+                title: "Item " + i,
+                note: "This is item #" + i,
                 icon: this.icons[Math.floor(Math.random() * this.icons.length)]
             });
         }
     }
     TerminePage.prototype.itemTapped = function (event, item) {
-        // That's right, we're pushing to ourselves!
+        // that's right, we're pushing to ourselves!
         this.nav.push(TerminePage, {
             item: item
         });
     };
     TerminePage = __decorate([
         core_1.Component({
-            templateUrl: 'build/pages/termine/termine.html'
+            templateUrl: "build/pages/termine/termine.html",
+            providers: [
+                global_vars_1.GlobalVars
+            ]
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.NavController, ionic_angular_1.NavParams])
     ], TerminePage);

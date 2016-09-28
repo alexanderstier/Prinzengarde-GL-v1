@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { Injectable } from "@angular/core";
+import { Http } from "@angular/http";
+import "rxjs/add/operator/map";
 
 /*
   Generated class for the MitgliederService provider.
@@ -28,7 +28,7 @@ export class MitgliederService {
       // We're using Angular Http provider to request the data,
       // then on the response it'll map the JSON data to a parsed JS object.
       // Next we process the data and resolve the promise with the new data.
-        this.http.get('https://randomuser.me/api/?results=25')
+        this.http.get("https://randomuser.me/api/?results=25")
         .map(res => res.json())
         .subscribe(data => {
           // we've got back the raw data, now generate the core schedule data
@@ -40,4 +40,3 @@ export class MitgliederService {
 
   }
 }
-

@@ -8,14 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var ionic_angular_1 = require('ionic-angular');
-var mitglieder_service_1 = require('../../providers/mitglieder-service/mitglieder-service');
+var core_1 = require("@angular/core");
+var ionic_angular_1 = require("ionic-angular");
+var global_vars_1 = require("../../providers/global-vars/global-vars");
+var mitglieder_service_1 = require("../../providers/mitglieder-service/mitglieder-service");
 var MitgliederPage = (function () {
     function MitgliederPage(nav, mitgliederService) {
         this.nav = nav;
         this.mitgliederService = mitgliederService;
-        this.title = 'Mitglieder';
+        this.nav_title = "Mitglieder";
+        this.title = "Mitglieder";
         this.loadMitglieder();
     }
     MitgliederPage.prototype.loadMitglieder = function () {
@@ -30,7 +32,7 @@ var MitgliederPage = (function () {
         // set val to the value of the searchbar
         var val = ev.target.value;
         // if the value is an empty string don't filter the items
-        if (val && val.trim() != '') {
+        if (val && val.trim() !== "") {
             this.mitgliederFilter = this.mitglieder.filter(function (mitglied) {
                 return (mitglied.name.first.toLowerCase().indexOf(val.toLowerCase()) > -1 || mitglied.name.last.toLowerCase().indexOf(val.toLowerCase()) > -1);
             });
@@ -38,8 +40,11 @@ var MitgliederPage = (function () {
     };
     MitgliederPage = __decorate([
         core_1.Component({
-            templateUrl: 'build/pages/mitglieder/mitglieder.html',
-            providers: [mitglieder_service_1.MitgliederService]
+            templateUrl: "build/pages/mitglieder/mitglieder.html",
+            providers: [
+                mitglieder_service_1.MitgliederService,
+                global_vars_1.GlobalVars
+            ]
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.NavController, mitglieder_service_1.MitgliederService])
     ], MitgliederPage);

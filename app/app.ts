@@ -1,49 +1,64 @@
-import { Component, ViewChild } from '@angular/core';
-import { App, ionicBootstrap, Platform, Nav } from 'ionic-angular';
-import { StatusBar } from 'ionic-native';
+import { Component, ViewChild } from "@angular/core";
+import { ionicBootstrap, Platform, Nav } from "ionic-angular";
 
-import { AktuellesPage } from './pages/aktuelles/aktuelles';
-import { TerminePage } from './pages/termine/termine';
-import { KontaktPage } from './pages/kontakt/kontakt';
-import { MitgliederPage } from './pages/mitglieder/mitglieder';
+import { GlobalVars } from "./providers/global-vars/global-vars";
+
+import { AktuellesPage } from "./pages/aktuelles/aktuelles";
+import { TerminePage } from "./pages/termine/termine";
+import { KontaktPage } from "./pages/kontakt/kontakt";
+import { MitgliederPage } from "./pages/mitglieder/mitglieder";
+
+interface PageObj {
+    title: string;
+    component: any;
+    icon: string;
+    image: string;
+    index?: number;
+}
 
 @Component({
-  templateUrl: 'build/app.html'
+    templateUrl: "build/app.html",
+    providers: [GlobalVars]
 })
 
 class PgGlApp {
   @ViewChild(Nav) nav: Nav;
 
+  appPages: PageObj[] = [
+      { title: "Aktuelles", icon: "paper", image: "", component: AktuellesPage },
+      { title: "Kontakt", icon: "mail", image: "", component: KontaktPage },
+  ];
+  loggedInPages: PageObj[] = [
+      { title: "Termine", icon: "calendar", image: "", component: TerminePage },
+      { title: "Mitglieder", icon: "contact", image: "", component: MitgliederPage }
+  ];
+  loggedOutPages: PageObj[] = [
+
+  ];
   rootPage: any = AktuellesPage;
 
-  pages: Array<{title: string, icon: string, component: any}>
-
   constructor(private platform: Platform) {
-    this.initializeApp();
-
-    // used for an example of ngFor and navigation
-    this.pages = [
-        { title: 'Aktuelles', icon: 'paper', component: AktuellesPage },
-        { title: 'Termine', icon: 'calendar', component: TerminePage },
-        { title: 'Kontakt', icon: 'mail', component: KontaktPage },
-        { title: 'Mitglieder', icon: 'contact', component: MitgliederPage }
-    ];
-
+      // call any initial plugins when ready
+      platform.ready().then(() => {
+          /*
+          StatusBar.styleDefault();
+          Splashscreen.hide();
+          */
+      });
   }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      StatusBar.styleDefault();
-    });
-  }
-
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
-  }
+    openPage(page: any):void {
+        // the nav component was found using @ViewChild(Nav)
+        // reset the nav to remove previous pages and only have this page
+        // we wouldn't want the back button to show in this scenario
+        if (page.index) {
+            this.nav.setRoot(page.component, { tabIndex: page.index });
+        } else {
+            this.nav.setRoot(page.component);
+        }
+    }
 }
 
-ionicBootstrap(PgGlApp, null, { mode: 'md' });
+// enableProdMode();
+
+ionicBootstrap(PgGlApp, null, { mode: "md" });

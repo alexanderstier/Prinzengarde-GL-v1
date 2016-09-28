@@ -8,37 +8,44 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var ionic_angular_1 = require('ionic-angular');
-var ionic_native_1 = require('ionic-native');
-var aktuelles_1 = require('./pages/aktuelles/aktuelles');
-var termine_1 = require('./pages/termine/termine');
-var kontakt_1 = require('./pages/kontakt/kontakt');
-var mitglieder_1 = require('./pages/mitglieder/mitglieder');
+var core_1 = require("@angular/core");
+var ionic_angular_1 = require("ionic-angular");
+var global_vars_1 = require("./providers/global-vars/global-vars");
+var aktuelles_1 = require("./pages/aktuelles/aktuelles");
+var termine_1 = require("./pages/termine/termine");
+var kontakt_1 = require("./pages/kontakt/kontakt");
+var mitglieder_1 = require("./pages/mitglieder/mitglieder");
 var PgGlApp = (function () {
     function PgGlApp(platform) {
         this.platform = platform;
-        this.rootPage = aktuelles_1.AktuellesPage;
-        this.initializeApp();
-        // used for an example of ngFor and navigation
-        this.pages = [
-            { title: 'Aktuelles', icon: 'paper', component: aktuelles_1.AktuellesPage },
-            { title: 'Termine', icon: 'calendar', component: termine_1.TerminePage },
-            { title: 'Kontakt', icon: 'mail', component: kontakt_1.KontaktPage },
-            { title: 'Mitglieder', icon: 'contact', component: mitglieder_1.MitgliederPage }
+        this.appPages = [
+            { title: "Aktuelles", icon: "paper", image: "", component: aktuelles_1.AktuellesPage },
+            { title: "Kontakt", icon: "mail", image: "", component: kontakt_1.KontaktPage },
         ];
-    }
-    PgGlApp.prototype.initializeApp = function () {
-        this.platform.ready().then(function () {
-            // Okay, so the platform is ready and our plugins are available.
-            // Here you can do any higher level native things you might need.
-            ionic_native_1.StatusBar.styleDefault();
+        this.loggedInPages = [
+            { title: "Termine", icon: "calendar", image: "", component: termine_1.TerminePage },
+            { title: "Mitglieder", icon: "contact", image: "", component: mitglieder_1.MitgliederPage }
+        ];
+        this.loggedOutPages = [];
+        this.rootPage = aktuelles_1.AktuellesPage;
+        // call any initial plugins when ready
+        platform.ready().then(function () {
+            /*
+            StatusBar.styleDefault();
+            Splashscreen.hide();
+            */
         });
-    };
+    }
     PgGlApp.prototype.openPage = function (page) {
-        // Reset the content nav to have just this page
+        // the nav component was found using @ViewChild(Nav)
+        // reset the nav to remove previous pages and only have this page
         // we wouldn't want the back button to show in this scenario
-        this.nav.setRoot(page.component);
+        if (page.index) {
+            this.nav.setRoot(page.component, { tabIndex: page.index });
+        }
+        else {
+            this.nav.setRoot(page.component);
+        }
     };
     __decorate([
         core_1.ViewChild(ionic_angular_1.Nav), 
@@ -46,10 +53,12 @@ var PgGlApp = (function () {
     ], PgGlApp.prototype, "nav", void 0);
     PgGlApp = __decorate([
         core_1.Component({
-            templateUrl: 'build/app.html'
+            templateUrl: "build/app.html",
+            providers: [global_vars_1.GlobalVars]
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.Platform])
     ], PgGlApp);
     return PgGlApp;
 }());
-ionic_angular_1.ionicBootstrap(PgGlApp, null, { mode: 'md' });
+// enableProdMode();
+ionic_angular_1.ionicBootstrap(PgGlApp, null, { mode: "md" });

@@ -89,19 +89,26 @@
     <splash src="resources\ios\splash\Default~iphone.png" width="320" height="480" />
   </platform>
   <platform name="windows">
-    <splash height="300" src="ressources\windows\splash\SplashScreen.scale-100.png" width="620" />
-    <splash height="1920" src="ressources\windows\splash\SplashScreen.scale-240.png" width="1152" />
-    <splash height="1920" src="ressources\windows\splash\SplashScreenPhone.scale-240.png" width="1152" />
+    <splash height="300" src="resources\windows\splash\SplashScreen.scale-100.png" width="620" />
+    <splash height="1920" src="resources\windows\splash\SplashScreen.scale-240.png" width="1152" />
+    <splash height="1920" src="resources\windows\splash\SplashScreenPhone.scale-240.png" width="1152" />
   </platform>
-  <plugin name="cordova-plugin-whitelist" version="1" />
+  <plugin name="cordova-plugin-camera" version="2.3.0" />
+  <plugin name="cordova-plugin-compat" version="1.0.0" />
+  <plugin name="cordova-plugin-console" version="1.0.3" />
+  <plugin name="cordova-plugin-device" version="1.1.2" />
+  <plugin name="cordova-plugin-device-orientation" version="1.0.3" />
+  <plugin name="cordova-plugin-dialogs" version="1.2.1" />
+  <plugin name="cordova-plugin-file" version="4.3.0" />
+  <plugin name="cordova-plugin-inappbrowser" version="1.4.0" />
+  <plugin name="cordova-plugin-media" version="2.4.0" />
   <plugin name="cordova-plugin-network-information" version="1.2.1" />
   <plugin name="cordova-plugin-splashscreen" version="3.2.2" />
-  <plugin name="cordova-plugin-dialogs" version="1.2.1" />
+  <plugin name="cordova-plugin-statusbar" version="2.1.3" />
   <plugin name="cordova-plugin-vibration" version="2.1.1" />
-  <plugin name="cordova-plugin-inappbrowser" version="1.4.0" />
-  <plugin name="cordova-plugin-device-orientation" version="1.0.3" />
-  <plugin name="cordova-plugin-device" version="1.1.2" />
-  <plugin name="cordova-plugin-compat" version="1.0.0" />
+  <plugin name="cordova-plugin-whitelist" version="1" />
+  <plugin name="cordova-sqlite-storage" version="1.4.7" />
+  <plugin name="ionic-plugin-keyboard" version="2.2.1" />
   <preference name="webviewbounce" value="false" />
   <preference name="UIWebViewBounce" value="false" />
   <preference name="DisallowOverscroll" value="true" />
@@ -112,6 +119,7 @@
   <preference name="android-minSdkVersion" value="19" />
   <preference name="android-maxSdkVersion" value="22" />
   <preference name="android-targetSdkVersion" value="22" />
+  <preference name="deployment-target" value="8.1" />
   <preference name="Fullscreen" value="True" />
   <preference name="SplashScreen" value="screen" />
   <preference name="WindowsStoreDisplayName" value="Prinzengarde Bergisch Gladbach" />
@@ -122,7 +130,4 @@
       <vs:appxPackageIsForStore>True</vs:appxPackageIsForStore>
     </vs:platformSpecificWidget>
   </vs:platformSpecificValues>
-  <plugin name="cordova-plugin-console" version="1.0.3" />
-  <plugin name="cordova-plugin-statusbar" version="2.1.3" />
-  <plugin name="ionic-plugin-keyboard" version="2.2.1" />
 </widget>

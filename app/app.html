@@ -6,9 +6,10 @@
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}} 
-        <ion-icon name="{{p.icon}}" item-right></ion-icon>
+      <button menuClose ion-item *ngFor="let p of appPages" (click)="openPage(p)">
+          <ion-icon name="{{p.icon}}" item-left></ion-icon>
+          <ion-img src="{{p.image}}" height="25" item-left></ion-img>
+          {{p.title}}
       </button>
     </ion-list>
   </ion-content>

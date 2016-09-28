@@ -1,10 +1,18 @@
 <ion-header>
-  <ion-navbar>
-    <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>{{title}}</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <ion-img src="{{global.logo}}" width="40" height="40" class="button-icon-right"></ion-img>
+            <ion-img src="{{global.slogan}}" width="136" height="40" class="button-icon-right"></ion-img>
+        </ion-title>
+    </ion-navbar>
+    <!--
+    <ion-toolbar no-border-top dark>
+        <ion-title><ion-img *ngIf="global.logo_startseite" logo width="25" height="25" src="{{global.logo_startseite}}"></ion-img>{{title}}</ion-title>
+    </ion-toolbar>
+        -->
 </ion-header>
 
 <ion-content padding class="aktuelles">

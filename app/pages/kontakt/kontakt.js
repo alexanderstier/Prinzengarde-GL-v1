@@ -8,18 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var ionic_angular_1 = require('ionic-angular');
+var core_1 = require("@angular/core");
+var ionic_angular_1 = require("ionic-angular");
+var global_vars_1 = require("../../providers/global-vars/global-vars");
 var KontaktPage = (function () {
-    function KontaktPage(navController) {
+    function KontaktPage(navController, global) {
         this.navController = navController;
-        this.title = 'Kontakt';
+        this.global = global;
+        this.nav_title = "Kontakt";
+        this.title = "Kontakt";
     }
     KontaktPage = __decorate([
         core_1.Component({
-            templateUrl: 'build/pages/kontakt/kontakt.html'
+            templateUrl: "build/pages/kontakt/kontakt.html"
         }), 
-        __metadata('design:paramtypes', [ionic_angular_1.NavController])
+        __metadata('design:paramtypes', [ionic_angular_1.NavController, global_vars_1.GlobalVars])
     ], KontaktPage);
     return KontaktPage;
 }());

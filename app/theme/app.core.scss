@@ -11,3 +11,11 @@
 @import "../pages/termine/termine";
 @import "../pages/kontakt/kontakt";
 @import "../pages/mitglieder/mitglieder";
+
+
+@import "font-awesome/font-awesome.scss";
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("../fonts/fontawesome-webfont.ttf");
+    src: url("../fonts/fontawesome-webfont.woff") format('woff');
+}
