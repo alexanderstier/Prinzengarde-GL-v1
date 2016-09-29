@@ -12,11 +12,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <vs:platformSpecificValues>
-        <vs:platformSpecificWidget id="PrinzengardeGL" platformName="windows" version="1.0.1.0">
-            <vs:appxPackageIsForStore>True</vs:appxPackageIsForStore>
-        </vs:platformSpecificWidget>
-    </vs:platformSpecificValues>
     <icon height="150" src="resources\windows\icons\Square150x150Logo.scale-100.png" width="150" />
     <icon height="360" src="resources\windows\icons\Square150x150Logo.scale-240.png" width="360" />
     <icon height="30" src="resources\windows\icons\Square30x30Logo.scale-100.png" width="30" />

@@ -1,6 +1,6 @@
 {
-  "name": "Prinzengarde Bergisch Gladbach",
-  "app_id": "de.cutiundstier.PrinzengardeBergischGladbach",
+  "name": "cutiundstier",
+  "app_id": "de.cutiundstier.cutiundstier",
   "v2": true,
   "typescript": true
 }

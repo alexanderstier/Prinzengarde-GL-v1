@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget defaultlocale="de-DE" id="de.cutiundstier.PrinzengardeGL" version="1.0.1" windows-packageVersion="1.0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
+    <name>Prinzengarde-GL</name>
+    <description>Mobiles Informationssystem der Prinzengarde vun 1966 der Grossen Gladbacher KG</description>
+    <author email="info@cutiundstier.de" href="http://cutiundstier.de">cuti und stier gbr</author>
+    <content src="index.html" />
+    <vs:features />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="resources\android\icon\drawable-xhdpi-icon.png" />
+    <icon height="150" src="resources\windows\icons\Square150x150Logo.scale-100.png" width="150" />
+    <icon height="360" src="resources\windows\icons\Square150x150Logo.scale-240.png" width="360" />
+    <icon height="30" src="resources\windows\icons\Square30x30Logo.scale-100.png" width="30" />
+    <icon height="310" src="resources\windows\icons\Square310x310Logo.scale-100.png" width="310" />
+    <icon height="44" src="resources\windows\icons\Square44x44Logo.scale-100.png" width="44" />
+    <icon height="106" src="resources\windows\icons\Square44x44Logo.scale-240.png" width="106" />
+    <icon height="70" src="resources\windows\icons\Square70x70Logo.scale-100.png" width="70" />
+    <icon height="71" src="resources\windows\icons\Square71x71Logo.scale-100.png" width="71" />
+    <icon height="170" src="resources\windows\icons\Square71x71Logo.scale-240.png" width="170" />
+    <icon height="50" src="resources\windows\icons\StoreLogo.scale-100.png" width="50" />
+    <icon height="120" src="resources\windows\icons\StoreLogo.scale-240.png" width="120" />
+    <icon height="150" src="resources\windows\icons\Wide310x150Logo.scale-100.png" width="310" />
+    <icon height="360" src="resources\windows\icons\Wide310x150Logo.scale-240.png" width="744" />
+    <splash height="300" src="resources\windows\splash\SplashScreen.scale-100.png" width="620" />
+    <splash height="1920" src="resources\windows\splash\SplashScreen.scale-240.png" width="1152" />
+    <splash height="1920" src="resources\windows\splash\SplashScreenPhone.scale-240.png" width="1152" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="FadeSplashScreenDuration" value="2000" />
+    <preference name="windows-target-version" value="10.0" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-maxSdkVersion" value="22" />
+    <preference name="android-targetSdkVersion" value="22" />
+    <preference name="deployment-target" value="8.1" />
+    <preference name="Fullscreen" value="True" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="WindowsStoreDisplayName" value="Prinzengarde Bergisch Gladbach" />
+    <preference name="WindowsStoreIdentityName" value="cutiundstier.de.PrinzengardeBergischGladbach" />
+    <preference name="WindowsStorePublisherName" value="cuti und stier gbr" />
+</widget>

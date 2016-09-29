@@ -1,12 +1,12 @@
 {
-  "name": "PrinzengardeGL",
+  "name": "cutiundstier",
   "version": "1.0.1",
   "author": "cuti und stier gbr",
-  "description": "Informationsdienst für mobile Endgeräte der Prinzengarde Bergisch Gladbach",
+  "description": "Informationsdienst fÃ¼r mobile EndgerÃ¤te",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/racingtomcat/prinzengarde-GL.git"
+    "url": "https://github.com/racingtomcat/cutiundstier.git"
   },
   "cordovaPlatforms": [],
   "cordovaPlugins": [
