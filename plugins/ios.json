@@ -1,0 +1,63 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "de.cutiundstier.PrinzengardeGL"
+        }
+    }
+}

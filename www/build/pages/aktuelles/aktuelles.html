@@ -1,0 +1,75 @@
+<ion-header>
+    <ion-navbar>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <ion-img src="{{global.logo}}" width="40" height="40" class="button-icon-right"></ion-img>
+            <ion-img src="{{global.slogan}}" width="136" height="40" class="button-icon-right"></ion-img>
+        </ion-title>
+    </ion-navbar>
+    <!--
+    <ion-toolbar no-border-top dark>
+        <ion-title><ion-img *ngIf="global.logo_startseite" logo width="25" height="25" src="{{global.logo_startseite}}"></ion-img>{{title}}</ion-title>
+    </ion-toolbar>
+        -->
+</ion-header>
+
+<ion-content padding class="aktuelles">
+
+    <ion-card *ngFor="let post of facebook_feed">
+        
+        <ion-item>
+            <ion-avatar item-left>
+                <ion-img src="{{post.from.picture.data.url}}"></ion-img>
+            </ion-avatar>
+                    
+            <h3>{{post.from.name}}</h3>
+            <p>{{convertISO8601toDate(post.created_time)}}</p>
+        </ion-item>
+
+        <ion-row responsive-md>
+
+            <ion-col *ngIf="post.full_picture">
+                <ion-img src="{{post.full_picture}}"></ion-img>
+            </ion-col>
+
+            <ion-col class="no-margin-bottom">
+                <h4 padding *ngIf="post.description">{{post.description}}</h4>
+                <ion-card-content *ngIf="post.message" id="{{post.id}}">
+                    <p>{{post.message}}</p>
+                </ion-card-content>
+                <div *ngIf="post.message">
+                    <button id="{{post.id}}_button" *ngIf="post.message.length > 570" full secondary (click)="show_more(post.id)">mehr</button>
+                </div>
+            </ion-col>
+
+        </ion-row>
+
+        <ion-row class="grey" light (click)="open_facebook(post.id)">
+            <ion-col>
+                <button secondary clear small>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                    <div *ngIf="post.likes">{{post.likes.data.length}}</div>
+                    <div *ngIf="!post.likes">0</div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button secondary clear small>
+                    <ion-icon name="chatboxes"></ion-icon>
+                    <div *ngIf="post.comments">{{post.comments.data.length}}</div>
+                    <div *ngIf="!post.comments">0</div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button secondary clear small>
+                    <ion-icon name="share"></ion-icon>
+                    <div *ngIf="post.shares">{{post.shares.count}}</div>
+                    <div *ngIf="!post.shares">0</div>
+                </button>
+            </ion-col>
+        </ion-row>
+
+    </ion-card>
+
+</ion-content>
