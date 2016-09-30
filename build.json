@@ -1,0 +1,16 @@
+{
+  "windows": {
+    "release": {
+      "publisherId": "CN=7317ECB4-32E1-4A84-94B6-43721BA622E2"
+    }
+  },
+  "android": {
+    "release": {
+      "keystore": "D:\\Android_SDK\\android.keystore",
+      "storePassword": "mcas1997",
+      "alias": "cutiundstier",
+      "password": "mcas1997",
+      "keystoreType": ""
+    }
+  }
+}

@@ -1,5 +1,6 @@
-import { Component, ViewChild } from "@angular/core";
-import { ionicBootstrap, Platform, Nav } from "ionic-angular";
+import { Component, ViewChild, enableProdMode } from "@angular/core";
+import { App, Events, ionicBootstrap, Nav, Platform } from "ionic-angular";
+import { Splashscreen, StatusBar } from 'ionic-native';
 
 import { GlobalVars } from "./providers/global-vars/global-vars";
 

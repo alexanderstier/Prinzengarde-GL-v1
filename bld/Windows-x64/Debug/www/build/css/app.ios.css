@@ -1,5 +1,5 @@
 ﻿@charset "UTF-8";
-body, .htmlarea-content-body {
+body {
   font-family: Open Sans, Exo, Arial;
   font-size: 15px;
   line-height: 1.55; }
@@ -118,6 +118,9 @@ ion-img img {
 
 .text-center {
   text-align: center; }
+
+.no-margin-bottom {
+  margin-bottom: 0 !important; }
 
 audio,
 canvas,
@@ -8806,7 +8809,7 @@ body {
   margin-bottom: 15px;
   overflow: hidden; }
 
-.aktuelles ion-row {
+.aktuelles ion-row.grey {
   background-color: #e0e0e0; }
 
 .aktuelles .expand {
@@ -8816,6 +8819,62 @@ body {
 
 .aktuelles .expand_hide {
   display: none; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto-light.ttf");
+  src: url("../fonts/roboto-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto-regular.ttf");
+  src: url("../fonts/roboto-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto-medium.ttf");
+  src: url("../fonts/roboto-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto-bold.ttf");
+  src: url("../fonts/roboto-bold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.ttf");
+  src: url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf");
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Semibold.ttf");
+  src: url("../fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.ttf");
+  src: url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
 
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome

@@ -7,8 +7,8 @@
 
     Weitere Informationen zu Paketmanifestdateien finden Sie unter http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="cutiundstier.de.PrinzengardeBergischGladbach" Publisher="CN=Apache Cordova Team" Version="1.0.1.0" ProcessorArchitecture="x64" />
-  <mp:PhoneIdentity PhoneProductId="c4741a60-44ed-11e6-9bbe-2b2e42b1400f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="cutiundstier.de.PrinzengardeBergischGladbach" Publisher="CN=7317ECB4-32E1-4A84-94B6-43721BA622E2" Version="1.1.0.0" ProcessorArchitecture="x64" />
+  <mp:PhoneIdentity PhoneProductId="03d7eec0-86e3-11e6-8ad8-85c5a685ca11" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Prinzengarde Bergisch Gladbach</DisplayName>
     <PublisherDisplayName>cuti und stier gbr</PublisherDisplayName>
@@ -23,8 +23,8 @@
   </Resources>
   <Applications>
     <Application Id="de.cutiundstier.PrinzengardeGL" StartPage="ms-appx-web://cutiundstier.de.prinzengardebergischgladbach/www/index.html">
-      <uap:VisualElements BackgroundColor="transparent" Description="Mobiles Informationssystem der Prinzengarde vun 1966 der Grossen Gladbacher KG" DisplayName="Prinzengarde-GL" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
-        <uap:SplashScreen Image="images\splashscreen.png" />
+      <uap:VisualElements BackgroundColor="#464646" Description="Mobiles Informationssystem der Prinzengarde vun 1966 der Grossen Gladbacher KG" DisplayName="Prinzengarde-GL" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+        <uap:SplashScreen BackgroundColor="#E2001A" Image="images\splashscreen.png" />
         <uap:DefaultTile ShortName="Prinzengarde-GL" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
         <uap:InitialRotationPreference>
           <uap:Rotation Preference="portrait" />
@@ -39,7 +39,8 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
-    <uap:Capability Name="contacts" />
+    <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="SharedGUID" Value="9ebdb27f-d75b-4d8c-b53f-7be4a1fe89f9" />

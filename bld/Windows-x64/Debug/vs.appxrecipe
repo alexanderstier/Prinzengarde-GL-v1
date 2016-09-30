@@ -8,509 +8,581 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
-    <PackageIdentityName>c4741a60-44ed-11e6-9bbe-2b2e42b1400f</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Apache Cordova Team</PackageIdentityPublisher>
+    <PackageIdentityName>03d7eec0-86e3-11e6-8ad8-85c5a685ca11</PackageIdentityName>
+    <PackageIdentityPublisher>CN=7317ECB4-32E1-4A84-94B6-43721BA622E2</PackageIdentityPublisher>
     <IntermediateOutputPath>D:\Ionic2\Prinzengarde-GL\platforms\windows\build\windows\bld\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>9B63A0D74D1D4C5E060E235B251955107DABF5FDDD8AA77B5E1F7C7C865DD761</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>cutiundstier.de.PrinzengardeBergischGladbach_1.0.1.0_x64__h35559jr9hy9m</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>cutiundstier.de.PrinzengardeBergischGladbach_h35559jr9hy9m!de.cutiundstier.PrinzengardeGL</RegisteredUserModeAppID>
+    <RegisteredManifestChecksum>A586FA1EC2487DAB64EFED8549F05450B0C67149570B6E47F75D6DA2A90064AC</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>cutiundstier.de.PrinzengardeBergischGladbach_1.1.0.0_x64__y38frgkfr5j72</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>cutiundstier.de.PrinzengardeBergischGladbach_y38frgkfr5j72!de.cutiundstier.PrinzengardeGL</RegisteredUserModeAppID>
     <RegisteredPackageID>cutiundstier.de.PrinzengardeBergischGladbach</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Apache Cordova Team</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.1.0</RegisteredVersion>
+    <RegisteredPackagePublisher>CN=7317ECB4-32E1-4A84-94B6-43721BA622E2</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\build\windows\debug\x64\win10\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T12:39:59.929</Modified>
+      <Modified>2016-09-30T09:16:26.841</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\images\SplashScreen.scale-100.png">
       <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T12:34:11.719</Modified>
+      <Modified>2016-09-30T07:53:52.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\images\Square150x150Logo.scale-100.png">
       <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T12:34:11.723</Modified>
+      <Modified>2016-09-30T07:53:52.625</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\images\Square30x30Logo.scale-100.png">
       <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.728</Modified>
+      <Modified>2016-09-30T07:53:52.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\images\Square310x310Logo.scale-100.png">
       <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T12:34:11.729</Modified>
+      <Modified>2016-09-30T07:53:52.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\images\Square44x44Logo.scale-100.png">
       <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T12:34:11.730</Modified>
+      <Modified>2016-09-30T07:53:52.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\images\Square70x70Logo.scale-100.png">
       <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.734</Modified>
+      <Modified>2016-09-30T07:53:52.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\images\Square71x71Logo.scale-100.png">
       <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T12:34:11.736</Modified>
+      <Modified>2016-09-30T07:53:52.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\images\StoreLogo.scale-100.png">
       <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T12:34:11.740</Modified>
+      <Modified>2016-09-30T07:53:52.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\images\Wide310x150Logo.scale-100.png">
       <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T12:34:11.743</Modified>
+      <Modified>2016-09-30T07:53:52.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\%402xicons\Icon_Kontakt.png">
       <PackagePath>www\images\%402xicons\Icon_Kontakt.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.603</Modified>
+      <Modified>2016-09-30T07:53:52.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\%402xicons\Icon_Projekte.png">
       <PackagePath>www\images\%402xicons\Icon_Projekte.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.604</Modified>
+      <Modified>2016-09-30T07:53:52.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\%402xicons\Icon_Team.png">
       <PackagePath>www\images\%402xicons\Icon_Team.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.606</Modified>
+      <Modified>2016-09-30T07:53:52.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\facebook.png">
       <PackagePath>www\images\facebook.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.631</Modified>
+      <Modified>2016-09-30T07:53:52.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\google.png">
       <PackagePath>www\images\google.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.632</Modified>
+      <Modified>2016-09-30T07:53:52.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\Icon_Facebook.png">
       <PackagePath>www\images\Icon_Facebook.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.607</Modified>
+      <Modified>2016-09-30T07:53:52.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\Icon_Kontakt.png">
       <PackagePath>www\images\Icon_Kontakt.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.609</Modified>
+      <Modified>2016-09-30T07:53:52.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\Icon_Projekte.png">
       <PackagePath>www\images\Icon_Projekte.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.610</Modified>
+      <Modified>2016-09-30T07:53:52.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\Icon_Team.png">
       <PackagePath>www\images\Icon_Team.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.611</Modified>
+      <Modified>2016-09-30T07:53:52.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\logo.png">
       <PackagePath>www\images\logo.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.634</Modified>
+      <Modified>2016-09-30T07:53:52.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\slogan.png">
       <PackagePath>www\images\slogan.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.635</Modified>
+      <Modified>2016-09-30T07:53:52.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\twitter.png">
       <PackagePath>www\images\twitter.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.636</Modified>
+      <Modified>2016-09-30T07:53:52.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\xing.png">
       <PackagePath>www\images\xing.png</PackagePath>
-      <Modified>2016-09-29T12:34:11.637</Modified>
+      <Modified>2016-09-30T07:53:52.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\app.html">
       <PackagePath>www\build\app.html</PackagePath>
-      <Modified>2016-09-29T12:39:58.177</Modified>
+      <Modified>2016-09-30T09:16:24.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\pages\aktuelles\aktuelles.html">
       <PackagePath>www\build\pages\aktuelles\aktuelles.html</PackagePath>
-      <Modified>2016-09-29T12:39:58.520</Modified>
+      <Modified>2016-09-30T09:16:25.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\pages\kontakt\kontakt.html">
       <PackagePath>www\build\pages\kontakt\kontakt.html</PackagePath>
-      <Modified>2016-09-29T12:39:58.521</Modified>
+      <Modified>2016-09-30T09:16:25.219</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\pages\mitglieder\mitglieder.html">
       <PackagePath>www\build\pages\mitglieder\mitglieder.html</PackagePath>
-      <Modified>2016-09-29T12:39:58.524</Modified>
+      <Modified>2016-09-30T09:16:25.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\pages\termine\termine.html">
       <PackagePath>www\build\pages\termine\termine.html</PackagePath>
-      <Modified>2016-09-29T12:39:58.525</Modified>
+      <Modified>2016-09-30T09:16:25.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
-      <Modified>2016-09-29T12:39:58.566</Modified>
+      <Modified>2016-09-30T09:16:25.270</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\css\app.ios.css">
       <PackagePath>www\build\css\app.ios.css</PackagePath>
-      <Modified>2016-09-29T12:39:58.185</Modified>
+      <Modified>2016-09-30T09:16:24.841</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\css\app.md.css">
       <PackagePath>www\build\css\app.md.css</PackagePath>
-      <Modified>2016-09-29T12:39:58.195</Modified>
+      <Modified>2016-09-30T09:16:24.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\css\app.wp.css">
       <PackagePath>www\build\css\app.wp.css</PackagePath>
-      <Modified>2016-09-29T12:39:58.203</Modified>
+      <Modified>2016-09-30T09:16:24.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\css\inappbrowser.css">
       <PackagePath>www\css\inappbrowser.css</PackagePath>
-      <Modified>2016-09-29T12:34:14.246</Modified>
+      <Modified>2016-09-30T07:53:56.427</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\css\splashscreen.css">
       <PackagePath>www\css\splashscreen.css</PackagePath>
-      <Modified>2016-09-29T12:34:11.597</Modified>
+      <Modified>2016-09-30T07:53:52.338</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\exo-bold.ttf">
+      <PackagePath>www\build\fonts\exo-bold.ttf</PackagePath>
+      <Modified>2016-09-30T08:43:43.536</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\exo-light.ttf">
+      <PackagePath>www\build\fonts\exo-light.ttf</PackagePath>
+      <Modified>2016-09-30T08:43:43.546</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\exo-medium.ttf">
+      <PackagePath>www\build\fonts\exo-medium.ttf</PackagePath>
+      <Modified>2016-09-30T08:43:43.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\exo-regular.ttf">
+      <PackagePath>www\build\fonts\exo-regular.ttf</PackagePath>
+      <Modified>2016-09-30T08:43:43.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\fontawesome-webfont.ttf">
+      <PackagePath>www\build\fonts\fontawesome-webfont.ttf</PackagePath>
+      <Modified>2016-09-30T08:43:43.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\ionicons.ttf">
       <PackagePath>www\build\fonts\ionicons.ttf</PackagePath>
-      <Modified>2016-09-29T12:34:11.180</Modified>
+      <Modified>2016-09-30T08:43:43.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\noto-sans-bold.ttf">
       <PackagePath>www\build\fonts\noto-sans-bold.ttf</PackagePath>
-      <Modified>2016-09-29T12:34:11.192</Modified>
+      <Modified>2016-09-30T08:43:43.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\noto-sans-regular.ttf">
       <PackagePath>www\build\fonts\noto-sans-regular.ttf</PackagePath>
-      <Modified>2016-09-29T12:34:11.196</Modified>
+      <Modified>2016-09-30T08:43:43.596</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\OpenSans-Bold.ttf">
+      <PackagePath>www\build\fonts\OpenSans-Bold.ttf</PackagePath>
+      <Modified>2016-09-30T08:43:43.496</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\OpenSans-Light.ttf">
+      <PackagePath>www\build\fonts\OpenSans-Light.ttf</PackagePath>
+      <Modified>2016-09-30T08:43:43.504</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\OpenSans-Regular.ttf">
+      <PackagePath>www\build\fonts\OpenSans-Regular.ttf</PackagePath>
+      <Modified>2016-09-30T08:43:43.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\OpenSans-Semibold.ttf">
+      <PackagePath>www\build\fonts\OpenSans-Semibold.ttf</PackagePath>
+      <Modified>2016-09-30T08:43:43.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\roboto-bold.ttf">
       <PackagePath>www\build\fonts\roboto-bold.ttf</PackagePath>
-      <Modified>2016-09-29T12:34:11.201</Modified>
+      <Modified>2016-09-30T08:43:43.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\roboto-light.ttf">
       <PackagePath>www\build\fonts\roboto-light.ttf</PackagePath>
-      <Modified>2016-09-29T12:34:11.209</Modified>
+      <Modified>2016-09-30T08:43:43.608</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\roboto-medium.ttf">
       <PackagePath>www\build\fonts\roboto-medium.ttf</PackagePath>
-      <Modified>2016-09-29T12:34:11.217</Modified>
+      <Modified>2016-09-30T08:43:43.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\roboto-regular.ttf">
       <PackagePath>www\build\fonts\roboto-regular.ttf</PackagePath>
-      <Modified>2016-09-29T12:34:11.225</Modified>
+      <Modified>2016-09-30T08:43:43.625</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\exo-bold.woff">
+      <PackagePath>www\build\fonts\exo-bold.woff</PackagePath>
+      <Modified>2016-09-30T08:43:43.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\exo-light.woff">
+      <PackagePath>www\build\fonts\exo-light.woff</PackagePath>
+      <Modified>2016-09-30T08:43:43.549</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\exo-medium.woff">
+      <PackagePath>www\build\fonts\exo-medium.woff</PackagePath>
+      <Modified>2016-09-30T08:43:43.557</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\exo-regular.woff">
+      <PackagePath>www\build\fonts\exo-regular.woff</PackagePath>
+      <Modified>2016-09-30T08:43:43.564</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\fontawesome-webfont.woff">
+      <PackagePath>www\build\fonts\fontawesome-webfont.woff</PackagePath>
+      <Modified>2016-09-30T08:43:43.575</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\ionicons.woff">
       <PackagePath>www\build\fonts\ionicons.woff</PackagePath>
-      <Modified>2016-09-29T12:34:11.183</Modified>
+      <Modified>2016-09-30T08:43:43.583</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\OpenSans-Bold.woff">
+      <PackagePath>www\build\fonts\OpenSans-Bold.woff</PackagePath>
+      <Modified>2016-09-30T08:43:43.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\OpenSans-Light.woff">
+      <PackagePath>www\build\fonts\OpenSans-Light.woff</PackagePath>
+      <Modified>2016-09-30T08:43:43.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\OpenSans-Regular.woff">
+      <PackagePath>www\build\fonts\OpenSans-Regular.woff</PackagePath>
+      <Modified>2016-09-30T08:43:43.521</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\OpenSans-Semibold.woff">
+      <PackagePath>www\build\fonts\OpenSans-Semibold.woff</PackagePath>
+      <Modified>2016-09-30T08:43:43.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\roboto-bold.woff">
       <PackagePath>www\build\fonts\roboto-bold.woff</PackagePath>
-      <Modified>2016-09-29T12:34:11.205</Modified>
+      <Modified>2016-09-30T08:43:43.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\roboto-light.woff">
       <PackagePath>www\build\fonts\roboto-light.woff</PackagePath>
-      <Modified>2016-09-29T12:34:11.213</Modified>
+      <Modified>2016-09-30T08:43:43.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\roboto-medium.woff">
       <PackagePath>www\build\fonts\roboto-medium.woff</PackagePath>
-      <Modified>2016-09-29T12:34:11.220</Modified>
+      <Modified>2016-09-30T08:43:43.620</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\roboto-regular.woff">
       <PackagePath>www\build\fonts\roboto-regular.woff</PackagePath>
-      <Modified>2016-09-29T12:34:11.230</Modified>
+      <Modified>2016-09-30T08:43:43.630</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\fonts\ionicons.woff2">
       <PackagePath>www\build\fonts\ionicons.woff2</PackagePath>
-      <Modified>2016-09-29T12:34:11.187</Modified>
+      <Modified>2016-09-30T08:43:43.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\js\app.bundle.js">
       <PackagePath>www\build\js\app.bundle.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.416</Modified>
+      <Modified>2016-09-30T09:16:25.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\js\es6-shim.min.js">
       <PackagePath>www\build\js\es6-shim.min.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.463</Modified>
+      <Modified>2016-09-30T09:16:25.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\js\Reflect.js">
       <PackagePath>www\build\js\Reflect.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.485</Modified>
+      <Modified>2016-09-30T09:16:25.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\js\zone.js">
       <PackagePath>www\build\js\zone.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.519</Modified>
+      <Modified>2016-09-30T09:16:25.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\cordova-js-src\confighelper.js">
       <PackagePath>www\cordova-js-src\confighelper.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.526</Modified>
+      <Modified>2016-09-30T09:16:25.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\cordova-js-src\exec.js">
       <PackagePath>www\cordova-js-src\exec.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.526</Modified>
+      <Modified>2016-09-30T09:16:25.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\cordova-js-src\platform.js">
       <PackagePath>www\cordova-js-src\platform.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.527</Modified>
+      <Modified>2016-09-30T09:16:25.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\cordova-js-src\splashscreen.js">
       <PackagePath>www\cordova-js-src\splashscreen.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.552</Modified>
+      <Modified>2016-09-30T09:16:25.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
-      <Modified>2016-09-29T12:34:11.594</Modified>
+      <Modified>2016-09-30T07:53:52.331</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.565</Modified>
+      <Modified>2016-09-30T09:16:25.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js">
       <PackagePath>www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.590</Modified>
+      <Modified>2016-09-30T09:16:25.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-camera\www\Camera.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\Camera.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.591</Modified>
+      <Modified>2016-09-30T09:16:25.296</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraConstants.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\CameraConstants.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.595</Modified>
+      <Modified>2016-09-30T09:16:25.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.596</Modified>
+      <Modified>2016-09-30T09:16:25.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.602</Modified>
+      <Modified>2016-09-30T09:16:25.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-console\www\console-via-logger.js">
       <PackagePath>www\plugins\cordova-plugin-console\www\console-via-logger.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.609</Modified>
+      <Modified>2016-09-30T09:16:25.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-console\www\logger.js">
       <PackagePath>www\plugins\cordova-plugin-console\www\logger.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.625</Modified>
+      <Modified>2016-09-30T09:16:25.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-device-orientation\src\windows\CompassProxy.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\src\windows\CompassProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.638</Modified>
+      <Modified>2016-09-30T09:16:25.357</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\compass.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\www\compass.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.639</Modified>
+      <Modified>2016-09-30T09:16:25.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\CompassError.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\www\CompassError.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.645</Modified>
+      <Modified>2016-09-30T09:16:25.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\CompassHeading.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\www\CompassHeading.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.646</Modified>
+      <Modified>2016-09-30T09:16:25.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js">
       <PackagePath>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.631</Modified>
+      <Modified>2016-09-30T09:16:25.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-device\www\device.js">
       <PackagePath>www\plugins\cordova-plugin-device\www\device.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.632</Modified>
+      <Modified>2016-09-30T09:16:25.351</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.647</Modified>
+      <Modified>2016-09-30T09:16:25.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-dialogs\www\notification.js">
       <PackagePath>www\plugins\cordova-plugin-dialogs\www\notification.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.647</Modified>
+      <Modified>2016-09-30T09:16:25.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file-transfer\src\windows\FileTransferProxy.js">
       <PackagePath>www\plugins\cordova-plugin-file-transfer\src\windows\FileTransferProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.790</Modified>
+      <Modified>2016-09-30T09:16:25.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file-transfer\www\FileTransfer.js">
       <PackagePath>www\plugins\cordova-plugin-file-transfer\www\FileTransfer.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.808</Modified>
+      <Modified>2016-09-30T09:16:25.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file-transfer\www\FileTransferError.js">
       <PackagePath>www\plugins\cordova-plugin-file-transfer\www\FileTransferError.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.809</Modified>
+      <Modified>2016-09-30T09:16:25.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\src\windows\FileProxy.js">
       <PackagePath>www\plugins\cordova-plugin-file\src\windows\FileProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.677</Modified>
+      <Modified>2016-09-30T09:16:25.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\browser\isChrome.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\browser\isChrome.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.683</Modified>
+      <Modified>2016-09-30T09:16:25.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\DirectoryEntry.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\DirectoryEntry.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.684</Modified>
+      <Modified>2016-09-30T09:16:25.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\DirectoryReader.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\DirectoryReader.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.685</Modified>
+      <Modified>2016-09-30T09:16:25.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\Entry.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\Entry.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.705</Modified>
+      <Modified>2016-09-30T09:16:25.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\File.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\File.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.706</Modified>
+      <Modified>2016-09-30T09:16:25.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\FileEntry.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileEntry.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.707</Modified>
+      <Modified>2016-09-30T09:16:25.460</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\FileError.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileError.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.707</Modified>
+      <Modified>2016-09-30T09:16:25.461</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\FileReader.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileReader.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.734</Modified>
+      <Modified>2016-09-30T09:16:25.489</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\FileSystem.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileSystem.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.735</Modified>
+      <Modified>2016-09-30T09:16:25.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\fileSystemPaths.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\fileSystemPaths.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.735</Modified>
+      <Modified>2016-09-30T09:16:25.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\fileSystems.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\fileSystems.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.741</Modified>
+      <Modified>2016-09-30T09:16:25.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\FileUploadOptions.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileUploadOptions.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.741</Modified>
+      <Modified>2016-09-30T09:16:25.505</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\FileUploadResult.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileUploadResult.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.742</Modified>
+      <Modified>2016-09-30T09:16:25.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\FileWriter.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileWriter.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.765</Modified>
+      <Modified>2016-09-30T09:16:25.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\Flags.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\Flags.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.766</Modified>
+      <Modified>2016-09-30T09:16:25.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\LocalFileSystem.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\LocalFileSystem.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.767</Modified>
+      <Modified>2016-09-30T09:16:25.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\Metadata.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\Metadata.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.767</Modified>
+      <Modified>2016-09-30T09:16:25.552</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\ProgressEvent.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\ProgressEvent.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.768</Modified>
+      <Modified>2016-09-30T09:16:25.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\requestFileSystem.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\requestFileSystem.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.768</Modified>
+      <Modified>2016-09-30T09:16:25.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-file\www\resolveLocalFileSystemURI.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\resolveLocalFileSystemURI.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.769</Modified>
+      <Modified>2016-09-30T09:16:25.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-inappbrowser\src\windows\InAppBrowserProxy.js">
       <PackagePath>www\plugins\cordova-plugin-inappbrowser\src\windows\InAppBrowserProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.827</Modified>
+      <Modified>2016-09-30T09:16:25.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-inappbrowser\www\inappbrowser.js">
       <PackagePath>www\plugins\cordova-plugin-inappbrowser\www\inappbrowser.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.841</Modified>
+      <Modified>2016-09-30T09:16:25.654</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-media\src\windows\MediaProxy.js">
       <PackagePath>www\plugins\cordova-plugin-media\src\windows\MediaProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.863</Modified>
+      <Modified>2016-09-30T09:16:25.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-media\www\Media.js">
       <PackagePath>www\plugins\cordova-plugin-media\www\Media.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.864</Modified>
+      <Modified>2016-09-30T09:16:25.679</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-media\www\MediaError.js">
       <PackagePath>www\plugins\cordova-plugin-media\www\MediaError.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.864</Modified>
+      <Modified>2016-09-30T09:16:25.679</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js">
       <PackagePath>www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.865</Modified>
+      <Modified>2016-09-30T09:16:25.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-network-information\www\Connection.js">
       <PackagePath>www\plugins\cordova-plugin-network-information\www\Connection.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.866</Modified>
+      <Modified>2016-09-30T09:16:25.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-network-information\www\network.js">
       <PackagePath>www\plugins\cordova-plugin-network-information\www\network.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.866</Modified>
+      <Modified>2016-09-30T09:16:25.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\splashscreen.js">
       <PackagePath>www\plugins\cordova-plugin-splashscreen\www\splashscreen.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.867</Modified>
+      <Modified>2016-09-30T09:16:25.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js">
       <PackagePath>www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.867</Modified>
+      <Modified>2016-09-30T09:16:25.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js">
       <PackagePath>www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.876</Modified>
+      <Modified>2016-09-30T09:16:25.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-statusbar\www\statusbar.js">
       <PackagePath>www\plugins\cordova-plugin-statusbar\www\statusbar.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.877</Modified>
+      <Modified>2016-09-30T09:16:25.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-vibration\src\windows\VibrationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-vibration\src\windows\VibrationProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.893</Modified>
+      <Modified>2016-09-30T09:16:25.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\cordova-plugin-vibration\www\vibration.js">
       <PackagePath>www\plugins\cordova-plugin-vibration\www\vibration.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.898</Modified>
+      <Modified>2016-09-30T09:16:25.746</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js">
       <PackagePath>www\plugins\ionic-plugin-keyboard\src\windows\KeyboardProxy.js</PackagePath>
-      <Modified>2016-09-29T12:39:58.899</Modified>
+      <Modified>2016-09-30T09:16:25.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\WinJS\js\base.js">
       <PackagePath>www\WinJS\js\base.js</PackagePath>
-      <Modified>2016-09-29T12:34:11.161</Modified>
+      <Modified>2016-09-30T07:53:51.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\js\app.bundle.js.map">
       <PackagePath>www\build\js\app.bundle.js.map</PackagePath>
-      <Modified>2016-09-29T12:34:11.471</Modified>
+      <Modified>2016-09-30T08:56:11.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\js\es6-shim.map">
       <PackagePath>www\build\js\es6-shim.map</PackagePath>
-      <Modified>2016-09-29T12:34:11.476</Modified>
+      <Modified>2016-09-30T08:43:43.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\build\js\Reflect.js.map">
       <PackagePath>www\build\js\Reflect.js.map</PackagePath>
-      <Modified>2016-09-29T12:34:11.243</Modified>
+      <Modified>2016-09-30T08:43:43.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\favicon.ico">
       <PackagePath>www\favicon.ico</PackagePath>
-      <Modified>2016-09-29T12:34:11.600</Modified>
+      <Modified>2016-09-30T07:53:52.357</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\www\images\Thumbs.db">
       <PackagePath>www\images\Thumbs.db</PackagePath>
-      <Modified>2016-09-29T12:34:11.629</Modified>
+      <Modified>2016-09-30T07:53:52.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\config.xml">
       <PackagePath>config.xml</PackagePath>
-      <Modified>2016-09-29T12:39:57.574</Modified>
+      <Modified>2016-09-30T09:16:24.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ionic2\Prinzengarde-GL\platforms\windows\build\windows\debug\x64\win10\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-29T12:39:59.787</Modified>
+      <Modified>2016-09-30T09:16:26.687</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var ionic_angular_1 = require("ionic-angular");
-var ionic_angular_2 = require("ionic-angular");
 var facebook_service_1 = require("../../providers/facebook-service/facebook-service");
 var global_vars_1 = require("../../providers/global-vars/global-vars");
 var AktuellesPage = (function () {
@@ -19,14 +18,12 @@ var AktuellesPage = (function () {
         this.global = global;
         this.facebookService = facebookService;
         this.nav_title = "Aktuelles";
-        this.title = "cuti und stier - Internetagentur";
+        this.title = "Prinzengarde Bergisch Gladbach";
         this.page_id = "PrinzengardeGL"; // your page_id here
-        this.loadFacebookFeed();
-        this.data = {};
-        this.storage = new ionic_angular_2.Storage(ionic_angular_2.SqlStorage);
-        console.log(this.storage);
-        this.storage.query("CREATE TABLE IF NOT EXISTS facebook_posts(\n          date CHAR(5) PRIMARY KEY,\n          location CHAR(40),\n          icon CHAR(30),\n          tempCurrent INT,\n          tempMin INT,\n          tempMax INT\n         )");
     }
+    AktuellesPage.prototype.ionViewDidEnter = function () {
+        this.loadFacebookFeed();
+    };
     AktuellesPage.prototype.loadFacebookFeed = function () {
         var _this = this;
         this.facebookService.load()
@@ -43,6 +40,29 @@ var AktuellesPage = (function () {
     AktuellesPage.prototype.open_facebook = function (id) {
         var ids = id.split("_");
         window.open("https://www.facebook.com/" + this.page_id + "/posts/" + ids[1], "_blank");
+    };
+    AktuellesPage.prototype.convertISO8601toDate = function (dtstr) {
+        // replace anything but numbers by spaces
+        dtstr = dtstr.replace(/\D/g, " ");
+        // trim any hanging white space
+        dtstr = dtstr.replace(/\s+$/, "");
+        // split on space
+        var dtcomps = dtstr.split(" ");
+        // not all ISO 8601 dates can convert, as is
+        // unless month and date specified, invalid
+        if (dtcomps.length < 3)
+            return "invalid date";
+        // if time not provided, set to zero
+        if (dtcomps.length < 4) {
+            dtcomps[3] = 0;
+            dtcomps[4] = 0;
+            dtcomps[5] = 0;
+        }
+        // modify month between 1 based ISO 8601 and zero based Date
+        dtcomps[1]--;
+        var convdt = new Date(Date.UTC(dtcomps[0], dtcomps[1], dtcomps[2], dtcomps[3], dtcomps[4], dtcomps[5]));
+        return convdt.toLocaleString();
+        ;
     };
     AktuellesPage = __decorate([
         core_1.Component({

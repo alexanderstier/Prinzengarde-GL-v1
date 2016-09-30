@@ -25,21 +25,28 @@
             </ion-avatar>
                     
             <h3>{{post.from.name}}</h3>
-            <p>{{post.created_time | date: 'dd.MM.yyyy HH:mm:ss'}}</p>
+            <p>{{post.created_time | date: "dd.MM.yyyy HH:mm"}}</p>
         </ion-item>
 
-        <h2 padding *ngIf="post.description">{{post.description}}</h2>
+        <ion-row responsive-md>
 
-        <ion-img src="{{post.full_picture}}" ></ion-img>
+            <ion-col *ngIf="post.full_picture">
+                <ion-img src="{{post.full_picture}}"></ion-img>
+            </ion-col>
 
-        <ion-card-content id="{{post.id}}">
-            <p>{{post.message}}</p>
-        </ion-card-content>
-        <div *ngIf="post.message">
-            <button id="{{post.id}}_button" *ngIf="post.message.length > 570" full secondary (click)="show_more(post.id)">mehr</button>
-        </div>
+            <ion-col class="no-margin-bottom">
+                <h4 padding *ngIf="post.description">{{post.description}}</h4>
+                <ion-card-content *ngIf="post.message" id="{{post.id}}">
+                    <p>{{post.message}}</p>
+                </ion-card-content>
+                <div *ngIf="post.message">
+                    <button id="{{post.id}}_button" *ngIf="post.message.length > 570" full secondary (click)="show_more(post.id)">mehr</button>
+                </div>
+            </ion-col>
 
-        <ion-row light (click)="open_facebook(post.id)">
+        </ion-row>
+
+        <ion-row class="grey" light (click)="open_facebook(post.id)">
             <ion-col>
                 <button secondary clear small>
                     <ion-icon name="thumbs-up"></ion-icon>
