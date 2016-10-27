@@ -1,46 +1,33 @@
 import { Component } from "@angular/core";
 import { NavController, NavParams } from "ionic-angular";
 
+import { TerminlisteService } from "../../providers/terminliste-service/terminliste-service";
 import { GlobalVars } from "../../providers/global-vars/global-vars";
 
 @Component({
     templateUrl: "build/pages/termine/termine.html",
-    providers: [
-        GlobalVars
-    ]
+    providers: [TerminlisteService]
 })
 
 export class TerminePage {
 
-    nav_title = "Termine";
-    title = "Termine";
+    nav_title: string = "Aktuelles";
+    title = "cuti und stier - Internetagentur";
 
-    selectedItem: any;
-    icons: string[];
-    items: Array<{title: string, note: string, icon: string}>;
+    public termine: any;
 
-  constructor(private nav: NavController, navParams: NavParams) {
-    // if we navigated to this page, we will have an item available as a nav param
-    this.selectedItem = navParams.get("item");
-
-    // let's populate this page with some filler content for funzies
-    this.icons = ["flask", "wifi", "beer", "football", "basketball", "paper-plane",
-    "american-football", "boat", "bluetooth", "build"];
-
-    this.items = [];
-    for(let i:number = 1; i < 11; i++) {
-      this.items.push({
-        title: "Item " + i,
-        note: "This is item #" + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
+    constructor(
+        private nav: NavController,
+        private global: GlobalVars,
+        public terminlisteService: TerminlisteService
+    ) {
+        this.loadTerminliste();
     }
-  }
 
-  itemTapped(event, item) {
-    // that's right, we're pushing to ourselves!
-    this.nav.push(TerminePage, {
-      item: item
-    });
-  }
+    loadTerminliste(): void {
+        this.terminlisteService.load()
+            .then(data => {
+                this.termine = data;
+            });
+    }
 }
