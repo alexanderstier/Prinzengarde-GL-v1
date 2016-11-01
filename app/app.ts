@@ -6,6 +6,7 @@ import { GlobalVars } from "./providers/global-vars/global-vars";
 
 import { AktuellesPage } from "./pages/aktuelles/aktuelles";
 import { TerminePage } from "./pages/termine/termine";
+import { LoginPage } from "./pages/login/login";
 import { KontaktPage } from "./pages/kontakt/kontakt";
 import { MitgliederPage } from "./pages/mitglieder/mitglieder";
 
@@ -29,16 +30,19 @@ class PgGlApp {
       { title: "Aktuelles", icon: "paper", image: "", component: AktuellesPage },
       { title: "Termine", icon: "calendar", image: "", component: TerminePage },
       { title: "Kontakt", icon: "mail", image: "", component: KontaktPage },
-      { title: "Mitglieder", icon: "contact", image: "", component: MitgliederPage }
   ];
   loggedInPages: PageObj[] = [
+      { title: "Mitglieder", icon: "contact", image: "", component: MitgliederPage }
   ];
   loggedOutPages: PageObj[] = [
-
+      { title: "Login", icon: "key", image: "", component: LoginPage }
   ];
   rootPage: any = AktuellesPage;
 
-  constructor(private platform: Platform) {
+  constructor(
+      private platform: Platform,
+      private globalVars: GlobalVars
+  ) {
       // call any initial plugins when ready
       platform.ready().then(() => {
           /*
@@ -48,7 +52,7 @@ class PgGlApp {
       });
   }
 
-    openPage(page: any):void {
+  openPage(page: any):void {
         // the nav component was found using @ViewChild(Nav)
         // reset the nav to remove previous pages and only have this page
         // we wouldn't want the back button to show in this scenario
@@ -57,7 +61,8 @@ class PgGlApp {
         } else {
             this.nav.setRoot(page.component);
         }
-    }
+  }
+
 }
 
 // enableProdMode();
