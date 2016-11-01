@@ -13,10 +13,10 @@ export class GlobalVars {
     constructor() {
         this.logo = "images/logo.png";
         this.slogan = "images/slogan.png";
-        this.logo_aktuelles = "images/Icon_Webentwicklung.png";
+        this.logo_aktuelles = "images/Icon_Aktuelles.png";
         this.logo_kontakt = "images/Icon_Kontakt.png";
-        this.logo_mitglieder = "images/Icon_Appentwicklung.png";
-        this.logo_termine = "images/Icon_Leistungen.png";
+        this.logo_mitglieder = "images/Icon_Mitglieder.png";
+        this.logo_termine = "images/Icon_Termine.png";
     }
 
 }

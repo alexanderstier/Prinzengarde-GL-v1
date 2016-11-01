@@ -11,8 +11,8 @@ import { GlobalVars } from "../../providers/global-vars/global-vars";
 
 export class TerminePage {
 
-    nav_title: string = "Aktuelles";
-    title = "cuti und stier - Internetagentur";
+    nav_title: string = "Termine";
+    title = "Öffentliche Termine";
 
     public termine: any;
 

@@ -9,21 +9,16 @@
         </ion-title>
     </ion-navbar>
     <ion-toolbar primary no-border-top>
-        <ion-title><ion-img width="25" height="30" src="{{global.logo_kontakt}}"></ion-img>{{title}}</ion-title>
+        <ion-title><ion-img width="25" height="30" src="{{global.logo_termine}}"></ion-img>{{title}}</ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content class="termine">
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    Test <b>{{selectedItem.title}}</b>
-  </div>
+<ion-content padding class="termine">
+    <ion-list>
+        <ion-item *ngFor="let termin of termine">
+            <ion-icon name="calendar" item-left></ion-icon>
+            <h3>{{termin.title}}</h3>
+            <p>{{termin.datetime | date: 'dd.MM.yyyy HH:mm:ss'}} | {{termin.location_simple}}</p>
+        </ion-item>
+    </ion-list>
 </ion-content>

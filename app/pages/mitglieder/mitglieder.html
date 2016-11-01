@@ -8,9 +8,11 @@
             <ion-img src="{{global.slogan}}" width="136" height="40" class="button-icon-right"></ion-img>
         </ion-title>
     </ion-navbar>
-    <ion-toolbar primary no-border-top>
-        <ion-title><ion-img width="25" height="30" src="{{global.logo_kontakt}}"></ion-img>{{title}}</ion-title>
+    <!--
+    <ion-toolbar no-border-top dark>
+        <ion-title><ion-img *ngIf="global.logo_startseite" logo width="25" height="25" src="{{global.logo_startseite}}"></ion-img>{{title}}</ion-title>
     </ion-toolbar>
+        -->
 </ion-header>
 
 <ion-content padding class="mitglieder">
@@ -18,10 +20,11 @@
     <ion-list>
         <ion-item *ngFor="let mitglied of mitgliederFilter">
             <ion-avatar item-left>
-                <img src="{{mitglied.picture.thumbnail}}">
+                <img src="{{mitglied.image}}">
             </ion-avatar>
-            <h2>{{mitglied.name.first}} {{mitglied.name.last}}</h2>
-            <p>{{mitglied.email}}</p>
+            <h3>{{mitglied.lastName}}, {{mitglied.firstName}}</h3>
+            <p *ngIf="mitglied.email"><ion-icon md="md-mail"></ion-icon> {{mitglied.email}}</p>
+            <p *ngIf="mitglied.telephone"><ion-icon md="md-call"></ion-icon> {{mitglied.telephone}}</p>
         </ion-item>
     </ion-list>
 </ion-content>

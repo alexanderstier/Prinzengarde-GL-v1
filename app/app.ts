@@ -29,9 +29,9 @@ class PgGlApp {
       { title: "Aktuelles", icon: "paper", image: "", component: AktuellesPage },
       { title: "Termine", icon: "calendar", image: "", component: TerminePage },
       { title: "Kontakt", icon: "mail", image: "", component: KontaktPage },
+      { title: "Mitglieder", icon: "contact", image: "", component: MitgliederPage }
   ];
   loggedInPages: PageObj[] = [
-      { title: "Mitglieder", icon: "contact", image: "", component: MitgliederPage }
   ];
   loggedOutPages: PageObj[] = [
 
