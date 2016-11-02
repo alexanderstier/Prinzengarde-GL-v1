@@ -6,11 +6,33 @@
 
   <ion-content>
     <ion-list>
+<<<<<<< .merge_file_a14556
       <button menuClose ion-item *ngFor="let p of appPages" (click)="openPage(p)">
           <ion-icon name="{{p.icon}}" item-left></ion-icon>
           <ion-img src="{{p.image}}" height="25" item-left></ion-img>
           {{p.title}}
       </button>
+=======
+        <button menuClose ion-item *ngFor="let p of appPages" (click)="openPage(p)">
+            <ion-icon name="{{p.icon}}" item-left></ion-icon>
+            <ion-img src="{{p.image}}" height="25" item-left></ion-img>
+            {{p.title}}
+        </button>
+        <div *ngIf="globalVars.isLoggedin">
+            <button menuClose ion-item *ngFor="let p of loggedInPages" (click)="openPage(p)">
+                <ion-icon name="{{p.icon}}" item-left></ion-icon>
+                <ion-img src="{{p.image}}" height="25" item-left></ion-img>
+                {{p.title}}
+            </button>
+        </div>
+        <div *ngIf="globalVars.isLoggedout">
+            <button menuClose ion-item *ngFor="let p of loggedOutPages" (click)="openPage(p)">
+                <ion-icon name="{{p.icon}}" item-left></ion-icon>
+                <ion-img src="{{p.image}}" height="25" item-left></ion-img>
+                {{p.title}}
+            </button>
+        </div>
+>>>>>>> .merge_file_a08356
     </ion-list>
   </ion-content>
 
