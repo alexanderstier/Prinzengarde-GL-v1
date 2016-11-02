@@ -20,7 +20,7 @@
         <ion-item *ngFor="let termin of termine">
             <ion-icon name="calendar" item-left></ion-icon>
             <h3>{{termin.title}}</h3>
-            <p>{{termin.datetime | date: 'dd.MM.yyyy HH:mm:ss'}} | {{termin.location_simple}}</p>
+            <p>{{global.convertISO8601toDate(termin.datetime)}} | {{termin.location_simple}}</p>
         </ion-item>
     </ion-list>
 </ion-content>
