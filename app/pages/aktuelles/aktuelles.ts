@@ -12,7 +12,7 @@ import { GlobalVars } from "../../providers/global-vars/global-vars";
 export class AktuellesPage {
 
     nav_title: string = "Aktuelles";
-    title = "Prinzengarde Bergisch Gladbach";
+    title = "Aktuelle Meldungen";
 
     page_id: string = "PrinzengardeGL"; // your page_id here
     public facebook_feed: any;

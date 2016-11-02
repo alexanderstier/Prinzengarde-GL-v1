@@ -9,7 +9,7 @@
         </ion-title>
     </ion-navbar>
     <ion-toolbar primary no-border-top>
-        <ion-title><ion-img width="25" height="30" src="{{global.logo_login}}"></ion-img>{{title}}</ion-title>
+        <ion-title><ion-img *ngIf="global.logo_login" width="25" height="30" src="{{global.logo_login}}"></ion-img>{{title}}</ion-title>
     </ion-toolbar>
 </ion-header>
 
@@ -28,6 +28,6 @@
         </ion-item>
 
     </ion-list>
-    <button (click)="login(global.usercreds)">Anmelden</button>
+    <button (click)="login(global.usercreds)" secondary>Anmelden</button>
 
 </ion-content>

@@ -6,10 +6,11 @@ export class GlobalVars {
     public logo: string;
     public slogan: string;
     public logo_aktuelles: string;
+    public logo_impressum: string;
     public logo_kontakt: string;
+    public logo_login: string;
     public logo_mitglieder: string;
     public logo_termine: string;
-    public logo_login: string;
     public usercreds = {
         username: '',
         password: ''
@@ -20,11 +21,12 @@ export class GlobalVars {
     constructor() {
         this.logo = "images/logo.png";
         this.slogan = "images/slogan.png";
-        this.logo_aktuelles = "images/Icon_Aktuelles.png";
+        this.logo_aktuelles = "";
+        this.logo_impressum = "";
         this.logo_kontakt = "images/Icon_Kontakt.png";
-        this.logo_mitglieder = "images/Icon_Mitglieder.png";
-        this.logo_termine = "images/Icon_Termine.png";
-        this.logo_login = "images/Icon_Login.png";
+        this.logo_login = "";
+        this.logo_mitglieder = "";
+        this.logo_termine = "";
         this.isLoggedin = false;
         this.isLoggedout = true;
     }

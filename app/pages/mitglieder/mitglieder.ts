@@ -10,7 +10,7 @@ import { GlobalVars } from "../../providers/global-vars/global-vars";
 })
 export class MitgliederPage {
 
-    nav_title = "Mitglieder";
+    nav_title = "Mitgliederliste";
     title = "Mitgliederliste";
 
     public mitglieder: any;

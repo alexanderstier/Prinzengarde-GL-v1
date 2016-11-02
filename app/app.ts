@@ -5,13 +5,11 @@ import { Splashscreen, StatusBar } from 'ionic-native';
 import { GlobalVars } from "./providers/global-vars/global-vars";
 
 import { AktuellesPage } from "./pages/aktuelles/aktuelles";
-import { TerminePage } from "./pages/termine/termine";
-<<<<<<< .merge_file_a08260
-=======
-import { LoginPage } from "./pages/login/login";
->>>>>>> .merge_file_a13572
+import { ImpressumPage } from "./pages/impressum/impressum";
 import { KontaktPage } from "./pages/kontakt/kontakt";
 import { MitgliederPage } from "./pages/mitglieder/mitglieder";
+import { LoginPage } from "./pages/login/login";
+import { TerminePage } from "./pages/termine/termine";
 
 interface PageObj {
     title: string;
@@ -35,17 +33,13 @@ class PgGlApp {
       { title: "Kontakt", icon: "mail", image: "", component: KontaktPage },
   ];
   loggedInPages: PageObj[] = [
-      { title: "Mitglieder", icon: "contact", image: "", component: MitgliederPage }
+      { title: "Mitgliederliste", icon: "contact", image: "", component: MitgliederPage }
   ];
   loggedOutPages: PageObj[] = [
-<<<<<<< .merge_file_a08260
-
-  ];
-  rootPage: any = AktuellesPage;
-
-  constructor(private platform: Platform) {
-=======
       { title: "Login", icon: "key", image: "", component: LoginPage }
+  ];
+  metaPages: PageObj[] = [
+      { title: "Impressum", icon: "copy", image: "", component: ImpressumPage }
   ];
   rootPage: any = AktuellesPage;
 
@@ -53,7 +47,6 @@ class PgGlApp {
       private platform: Platform,
       private globalVars: GlobalVars
   ) {
->>>>>>> .merge_file_a13572
       // call any initial plugins when ready
       platform.ready().then(() => {
           /*
@@ -63,11 +56,7 @@ class PgGlApp {
       });
   }
 
-<<<<<<< .merge_file_a08260
-    openPage(page: any):void {
-=======
   openPage(page: any):void {
->>>>>>> .merge_file_a13572
         // the nav component was found using @ViewChild(Nav)
         // reset the nav to remove previous pages and only have this page
         // we wouldn't want the back button to show in this scenario
@@ -76,12 +65,8 @@ class PgGlApp {
         } else {
             this.nav.setRoot(page.component);
         }
-<<<<<<< .merge_file_a08260
-    }
-=======
   }
 
->>>>>>> .merge_file_a13572
 }
 
 // enableProdMode();

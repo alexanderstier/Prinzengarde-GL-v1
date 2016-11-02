@@ -58,6 +58,17 @@ h2 a {
 .toolbar {
   border-bottom: 1px solid #e0e0e0; }
 
+.cutiundstier .toolbar-background {
+  background-color: white; }
+
+.cutiundstier.toolbar {
+  padding: 10px 7px 10px 4px;
+  border-top: 1px solid #0b68ae; }
+
+.cutiundstier img {
+  margin: auto;
+  display: block; }
+
 ion-navbar ion-title {
   text-align: center; }
 
@@ -121,6 +132,9 @@ ion-img img {
 
 .no-margin-bottom {
   margin-bottom: 0 !important; }
+
+.item > ion-icon, .item-inner > ion-icon {
+  color: #E1CF5F; }
 
 audio,
 canvas,

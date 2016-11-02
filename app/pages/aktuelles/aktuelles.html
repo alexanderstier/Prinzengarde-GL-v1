@@ -8,11 +8,9 @@
             <ion-img src="{{global.slogan}}" width="136" height="40" class="button-icon-right"></ion-img>
         </ion-title>
     </ion-navbar>
-    <!--
-    <ion-toolbar no-border-top dark>
+    <ion-toolbar primary no-border-top>
         <ion-title><ion-img *ngIf="global.logo_startseite" logo width="25" height="25" src="{{global.logo_startseite}}"></ion-img>{{title}}</ion-title>
     </ion-toolbar>
-        -->
 </ion-header>
 
 <ion-content padding class="aktuelles">
@@ -24,7 +22,7 @@
                 <ion-img src="{{post.from.picture.data.url}}"></ion-img>
             </ion-avatar>
                     
-            <h3>{{post.from.name}}</h3>
+            <h6>{{post.from.name}}</h6>
             <p>{{global.convertISO8601toDate(post.created_time)}}</p>
         </ion-item>
 
