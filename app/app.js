@@ -12,21 +12,31 @@ var core_1 = require("@angular/core");
 var ionic_angular_1 = require("ionic-angular");
 var global_vars_1 = require("./providers/global-vars/global-vars");
 var aktuelles_1 = require("./pages/aktuelles/aktuelles");
-var termine_1 = require("./pages/termine/termine");
+var impressum_1 = require("./pages/impressum/impressum");
+var jubilaeum_1 = require("./pages/jubilaeum/jubilaeum");
 var kontakt_1 = require("./pages/kontakt/kontakt");
 var mitglieder_1 = require("./pages/mitglieder/mitglieder");
+var login_1 = require("./pages/login/login");
+var termine_1 = require("./pages/termine/termine");
 var PgGlApp = (function () {
-    function PgGlApp(platform) {
+    function PgGlApp(platform, globalVars) {
         this.platform = platform;
+        this.globalVars = globalVars;
         this.appPages = [
             { title: "Aktuelles", icon: "paper", image: "", component: aktuelles_1.AktuellesPage },
+            { title: "50 Jahre Prinzengarde", icon: "", image: "images/Icon_Jubilaeum.png", component: jubilaeum_1.JubilaeumPage },
+            { title: "Termine", icon: "calendar", image: "", component: termine_1.TerminePage },
             { title: "Kontakt", icon: "mail", image: "", component: kontakt_1.KontaktPage },
         ];
         this.loggedInPages = [
-            { title: "Termine", icon: "calendar", image: "", component: termine_1.TerminePage },
-            { title: "Mitglieder", icon: "contact", image: "", component: mitglieder_1.MitgliederPage }
+            { title: "Mitgliederliste", icon: "contact", image: "", component: mitglieder_1.MitgliederPage }
         ];
-        this.loggedOutPages = [];
+        this.loggedOutPages = [
+            { title: "Login", icon: "key", image: "", component: login_1.LoginPage }
+        ];
+        this.metaPages = [
+            { title: "Impressum", icon: "copy", image: "", component: impressum_1.ImpressumPage }
+        ];
         this.rootPage = aktuelles_1.AktuellesPage;
         // call any initial plugins when ready
         platform.ready().then(function () {
@@ -56,7 +66,7 @@ var PgGlApp = (function () {
             templateUrl: "build/app.html",
             providers: [global_vars_1.GlobalVars]
         }), 
-        __metadata('design:paramtypes', [ionic_angular_1.Platform])
+        __metadata('design:paramtypes', [ionic_angular_1.Platform, global_vars_1.GlobalVars])
     ], PgGlApp);
     return PgGlApp;
 }());

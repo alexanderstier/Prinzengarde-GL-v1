@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget defaultlocale="de-DE" id="de.cutiundstier.PrinzengardeGL" version="1.0.1" windows-packageVersion="1.0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
+<widget defaultlocale="de-DE" id="de.cutiundstier.PrinzengardeGL" version="1.1.0" windows-packageVersion="1.1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
   <name>Prinzengarde-GL</name>
   <description>Mobiles Informationssystem der Prinzengarde vun 1966 der Grossen Gladbacher KG</description>
   <author email="info@cutiundstier.de" href="http://cutiundstier.de">cuti und stier gbr</author>
@@ -117,7 +117,8 @@
   <preference name="WindowsStorePublisherName" value="cuti und stier gbr" />
   <preference name="deployment-target" value="8.1" />
   <vs:platformSpecificValues>
-    <vs:platformSpecificWidget platformName="windows">
+    <vs:platformSpecificWidget platformName="windows" version="0.1.0.0">
+      <vs:appxPackageIsForStore>True</vs:appxPackageIsForStore>
     </vs:platformSpecificWidget>
   </vs:platformSpecificValues>
 </widget>

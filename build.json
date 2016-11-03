@@ -1,7 +1,8 @@
 {
   "windows": {
     "release": {
-      "publisherId": "CN=7317ECB4-32E1-4A84-94B6-43721BA622E2"
+      "publisherId": "CN=7317ECB4-32E1-4A84-94B6-43721BA622E2",
+      "packageCertificateKeyFile": "res\\native\\windows\\CordovaApp.pfx"
     }
   },
   "android": {
