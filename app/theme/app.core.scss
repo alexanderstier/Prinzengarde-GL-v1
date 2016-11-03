@@ -8,9 +8,12 @@
 // App Shared Sass variables belong in app.variables.scss.
 
 @import "../pages/aktuelles/aktuelles";
-@import "../pages/termine/termine";
+@import "../pages/impressum/impressum";
+@import "../pages/jubilaeum/jubilaeum";
 @import "../pages/kontakt/kontakt";
+@import "../pages/login/login";
 @import "../pages/mitglieder/mitglieder";
+@import "../pages/termine/termine";
 
 @font-face {
     font-family: 'Roboto';

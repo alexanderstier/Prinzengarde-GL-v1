@@ -108,6 +108,9 @@ ion-list-header, ion-item-divider {
 ion-img img {
   min-height: inherit !important; }
 
+ion-img[item-left] + .item-inner, ion-img[item-left] + .item-input {
+  margin-left: 24px; }
+
 .main-title-box {
   border-bottom: 1px solid #ebebeb;
   margin-bottom: 20px;
@@ -135,6 +138,24 @@ ion-img img {
 
 .item > ion-icon, .item-inner > ion-icon {
   color: #E1CF5F; }
+
+.modal-back-button {
+  float: left;
+  box-shadow: none !important;
+  margin-top: 5px !important; }
+
+.modal-wrapper {
+  position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important; }
+
+.modal-image {
+  margin-bottom: 15px; }
+
+.modal-content {
+  margin-bottom: 25px; }
 
 audio,
 canvas,
@@ -9320,6 +9341,65 @@ body {
 
 .aktuelles .expand_hide {
   display: none; }
+
+.jubilaeum .toolbar-title {
+  white-space: normal; }
+
+.jubilaeum h2 {
+  font-size: 16px !important;
+  color: #E2001A; }
+
+.kontakt ion-label[stacked], .kontakt ion-label[floating] {
+  padding-left: 10px; }
+
+.kontakt ion-item.item.item-label-floating.input-has-value.item-input {
+  margin-top: 15px; }
+
+.kontakt .input-has-focus ion-label[floating], .kontakt .input-has-value ion-label[floating] {
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1); }
+
+.kontakt ion-label {
+  margin-left: 10px; }
+
+.kontakt ion-input, .kontakt ion-select, .kontakt ion-textarea {
+  background-color: #f2f2f2;
+  padding: 5px 10px; }
+
+.kontakt .invalid {
+  border: 1px solid #ea6153; }
+
+.kontakt form .item {
+  padding-left: 0; }
+
+.kontakt form .item .item-inner {
+  padding-right: 0; }
+
+.login ion-label[stacked], .login ion-label[floating] {
+  padding-left: 10px; }
+
+.login ion-item.item.item-label-floating.input-has-value.item-input {
+  margin-top: 15px; }
+
+.login .input-has-focus ion-label[floating], .login .input-has-value ion-label[floating] {
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1); }
+
+.login ion-label {
+  margin-left: 10px; }
+
+.login ion-input, .login ion-select, .login ion-textarea {
+  background-color: #f2f2f2;
+  padding: 5px 10px; }
+
+.login .invalid {
+  border: 1px solid #ea6153; }
+
+.login form .item {
+  padding-left: 0; }
+
+.login form .item .item-inner {
+  padding-right: 0; }
 
 @font-face {
   font-family: 'Roboto';

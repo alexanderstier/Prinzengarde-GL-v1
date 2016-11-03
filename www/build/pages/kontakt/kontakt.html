@@ -15,36 +15,88 @@
 
 <ion-content padding class="kontakt">
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <h2 class="">
-            Sie haben Fragen?<br />Wir sind für Sie da!
-        </h2>
-        <p>
-            <b><span class="txt-gruen">Prinzengarde der Grossen Gladbacher KG</span></b><br />c/o Franz Peter Esser<br />Gerstenschlag 44<br>51465 Bergisch Gladbach
-        </p>
-        <p>
-            <b><span class="txt-gruen">E-Mail an uns:</span></b><br><a href="mailto:info@prinzengarde-gl.de" class="internal-link">info@prinzengarde-gl.de</a>
-        </p>
-        <p><b><span class="txt-gruen">Folgen Sie uns:</span></b></p>
+    <ion-row responsive-md>
+        <ion-col width-50>
 
-    </div>
+            <h2 class="">Sie haben Fragen?<br />Wir sind für Sie da!</h2>
+            <br />
+            <h3>Prinzengarde der Grossen Gladbacher KG</h3>
+            <p>
+                c/o Franz Peter Esser<br />
+                Gerstenschlag 44<br />
+                51465 Bergisch Gladbach
+            </p>
+            <p>
+                <strong>E-Mail an uns:</strong> <a href="mailto:info@prinzengarde-gl.de" class="internal-link">info@prinzengarde-gl.de</a>
+            </p>
+            <h3>Folgen Sie uns</h3>
+            <div>
+                <!--
+                <div class="social-icon">
+                    <a href="https://twitter.com/cutiundstier" target="_blank" class="make"><img src="images/twitter.png" width="40" height="40" alt=""></a>
+                </div>
+                <div class="social-icon">
+                    <a href="https://plus.google.com/+cutistiergbrBergischGladbach" target="_blank" class="make"><img src="images/google.png" width="40" height="40" alt=""></a>
+                </div>
+                -->
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/prinzengardeGL/" target="_blank" class="make"><img src="images/facebook.png" width="40" height="40" alt=""></a>
+                </div>
+                <!--
+                <div class="social-icon">
+                    <a href="https://www.xing.com/xbp/pages/cuti-und-stier-gbr" target="_blank" class="make"><img src="images/xing.png" width="40" height="40" alt=""></a>
+                </div>
+                -->
+            </div>
+        </ion-col>
 
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <!--
-        <div class="social-icon">
-            <a href="https://twitter.com/cutiundstier" target="_blank" class="make"><img src="images/twitter.png" width="40" height="40" alt=""></a>
-        </div>
-        <div class="social-icon">
-            <a href="https://plus.google.com/+cutistiergbrBergischGladbach" target="_blank" class="make"><img src="images/google.png" width="40" height="40" alt=""></a>
-        </div>
-        -->
-        <div class="social-icon">
-            <a href="https://www.facebook.com/prinzengardeGL/" target="_blank" class="make"><img src="images/facebook.png" width="40" height="40" alt=""></a>
-        </div>
-        <!--
-        <div class="social-icon">
-            <a href="https://www.xing.com/xbp/pages/cuti-und-stier-gbr" target="_blank" class="make"><img src="images/xing.png" width="40" height="40" alt=""></a>
-        </div>
-        -->
-    </div>
+        <ion-col width-50>
+            <h2 class="">Schreiben Sie uns!</h2>
+
+            <p *ngIf="submitAttempt" style="color: #ea6153;">Bitte fülle alle Felder aus.</p>
+            
+            <ion-list no-lines>
+                <form [ngFormModel]="kontaktForm">
+                    <ion-item>
+                        <ion-label floating>Dein Name</ion-label>
+                        <ion-input #sendername (change)="elementChanged(sendername)" ngControl="sendername" type="text"></ion-input>
+                    </ion-item>
+                    <ion-item *ngIf="!kontaktForm.controls.sendername.valid  && (sendernameChanged || submitAttempt)">
+                        <p style="color: #ea6153;">Bitte gib Deinen Namen an.</p>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label floating>Deine E-Mail-Adresse</ion-label>
+                        <ion-input #sendermail (change)="elementChanged(sendermail)" ngControl="sendermail" type="text"></ion-input>
+                    </ion-item>
+                    <ion-item *ngIf="!kontaktForm.controls.sendermail.valid  && (sendermailChanged || submitAttempt)">
+                        <p style="color: #ea6153;">Bitte gib Deine E-Mail-Adresse an.</p>
+                    </ion-item>
+                    <ion-item> 
+                        <ion-label floating>Betreff</ion-label>
+                        <ion-input type="text" value="Anfrage über die Prinzengarde-App"></ion-input>
+                    </ion-item>
+                    <ion-item *ngIf="!kontaktForm.controls.subject.valid  && (subjectChanged || submitAttempt)">
+                        <p style="color: #ea6153;">Bitte gib einen Betreff an.</p>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label floating>Dein Anliegen</ion-label>
+                        <ion-textarea #message (change)="elementChanged(message)" ngControl="message"></ion-textarea>
+                    </ion-item>
+                    <ion-item *ngIf="!kontaktForm.controls.message.valid  && (messageChanged || submitAttempt)">
+                        <p style="color: #ea6153;">Bitte gib Dein Anliegen an.</p>
+                    </ion-item>
+                </form>
+                <div padding>
+                    <button block secondary (click)="send()">Versenden</button>
+                </div>
+            </ion-list>
+            <div padding *ngIf="(submitSuccess)">
+                <h3 style="color: #ea6153;">Ihre Nachricht wurde versendet.</h3>
+            </div>
+            <div padding *ngIf="(submitError)">
+                <h3 style="color: #ea6153;">Beim Versand der Nachricht ist ein Fehler aufgetreten.</h3>
+            </div>
+
+        </ion-col>
+    </ion-row>
 </ion-content>

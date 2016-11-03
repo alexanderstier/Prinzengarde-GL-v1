@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <ion-img src="{{global.logo}}" width="40" height="40" class="button-icon-right"></ion-img>
+            <ion-img src="{{global.slogan}}" width="136" height="40" class="button-icon-right"></ion-img>
+        </ion-title>
+    </ion-navbar>
+    <ion-toolbar primary no-border-top>
+        <ion-title><ion-img *ngIf="global.logo_jubilaeum" width="25" height="30" src="{{global.logo_jubilaeum}}"></ion-img>{{title}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="jubilaeum">
+    <ion-title><h2>Aus fünf Jahrzehnten -<br />Ein komplett unvollständiger historischer Abriss zum großen Jubiläum!</h2></ion-title>
+    <ion-list>
+        <ion-item (click)="openJubilaeumModalVorgeschichte()">
+            <ion-icon name="arrow-dropright" item-left></ion-icon>
+            Vorgeschichte: Von den Stadtsoldaten zur Prinzengarde
+        </ion-item>
+        <ion-item (click)="openJubilaeumModal1966()">
+            <ion-icon name="arrow-dropright" item-left></ion-icon>
+            1966 – Das Gründungsjahr
+        </ion-item>
+        <ion-item (click)="openJubilaeumModal60er()">
+            <ion-icon name="arrow-dropright" item-left></ion-icon>
+            Die 60er - Pionierzeit
+        </ion-item>
+    </ion-list>
+</ion-content>
+

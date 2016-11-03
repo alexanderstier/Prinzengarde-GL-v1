@@ -7,14 +7,14 @@
   <ion-content>
       <ion-list>
           <button menuClose ion-item *ngFor="let p of appPages" (click)="openPage(p)">
-              <ion-icon name="{{p.icon}}" item-left></ion-icon>
-              <ion-img src="{{p.image}}" height="25" item-left></ion-img>
+              <ion-icon *ngIf="p.icon" name="{{p.icon}}" item-left></ion-icon>
+              <ion-img  *ngIf="p.image" src="{{p.image}}" height="32" item-left></ion-img>
               {{p.title}}
           </button>
       </ion-list>
       <ion-list>
           <div *ngIf="globalVars.isLoggedin">
-              <ion-list-header>Mitgliederbereich</ion-list-header>
+              <ion-list-header padding>Mitgliederbereich</ion-list-header>
               <button menuClose ion-item *ngFor="let p of loggedInPages" (click)="openPage(p)">
                   <ion-icon name="{{p.icon}}" item-left></ion-icon>
                   <ion-img src="{{p.image}}" height="25" item-left></ion-img>

@@ -6,6 +6,7 @@ import { GlobalVars } from "./providers/global-vars/global-vars";
 
 import { AktuellesPage } from "./pages/aktuelles/aktuelles";
 import { ImpressumPage } from "./pages/impressum/impressum";
+import { JubilaeumPage } from "./pages/jubilaeum/jubilaeum";
 import { KontaktPage } from "./pages/kontakt/kontakt";
 import { MitgliederPage } from "./pages/mitglieder/mitglieder";
 import { LoginPage } from "./pages/login/login";
@@ -29,6 +30,7 @@ class PgGlApp {
 
   appPages: PageObj[] = [
       { title: "Aktuelles", icon: "paper", image: "", component: AktuellesPage },
+      { title: "50 Jahre Prinzengarde", icon: "", image: "images/Icon_Jubilaeum.png", component: JubilaeumPage },
       { title: "Termine", icon: "calendar", image: "", component: TerminePage },
       { title: "Kontakt", icon: "mail", image: "", component: KontaktPage },
   ];

@@ -170,6 +170,9 @@ ion-list-header, ion-item-divider {
 ion-img img {
     min-height: inherit !important;
 }
+ion-img[item-left] + .item-inner, ion-img[item-left] + .item-input {
+    margin-left: 24px;
+}
 
 .main-title-box {
     border-bottom: 1px solid #ebebeb;
@@ -202,4 +205,25 @@ ion-img img {
 
 .item > ion-icon, .item-inner > ion-icon {
     color: #E1CF5F;
+}
+
+.modal-back-button{
+    float: left;
+    box-shadow: none !important;
+    margin-top: 5px !important;
+}
+
+
+.modal-wrapper {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+.modal-image{
+    margin-bottom: 15px;
+}
+.modal-content{
+    margin-bottom: 25px;
 }
