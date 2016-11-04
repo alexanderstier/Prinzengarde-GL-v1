@@ -18,11 +18,11 @@
     <ion-list>
         <ion-item *ngFor="let mitglied of mitgliederFilter">
             <ion-avatar item-left>
-                <img src="{{mitglied.image}}">
+                <img src="images/prinzengarde_outline_gold.png"> <!--{{mitglied.image}}-->
             </ion-avatar>
             <h3>{{mitglied.lastName}}, {{mitglied.firstName}}</h3>
-            <p *ngIf="mitglied.email"><ion-icon md="md-mail"></ion-icon> {{mitglied.email}}</p>
-            <p *ngIf="mitglied.telephone"><ion-icon md="md-call"></ion-icon> {{mitglied.telephone}}</p>
+            <p *ngIf="mitglied.email" style="padding: 4px 0;"><ion-icon md="md-mail" style="margin-right: 10px;"></ion-icon> {{mitglied.email}}</p>
+            <p *ngIf="mitglied.telephone" style="padding: 4px 0;"><ion-icon md="md-call" style="margin-right: 10px;"></ion-icon> {{mitglied.telephone}}</p>
         </ion-item>
     </ion-list>
 </ion-content>

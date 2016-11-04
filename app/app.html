@@ -12,9 +12,9 @@
               {{p.title}}
           </button>
       </ion-list>
-      <ion-list>
+      <ion-list style="margin: 0; padding-bottom: 16px;">
           <div *ngIf="globalVars.isLoggedin">
-              <ion-list-header padding>Mitgliederbereich</ion-list-header>
+              <ion-list-header class="mitglieder_menu">Mitgliederbereich</ion-list-header>
               <button menuClose ion-item *ngFor="let p of loggedInPages" (click)="openPage(p)">
                   <ion-icon name="{{p.icon}}" item-left></ion-icon>
                   <ion-img src="{{p.image}}" height="25" item-left></ion-img>
@@ -22,7 +22,7 @@
               </button>
           </div>
           <div *ngIf="globalVars.isLoggedout">
-              <button menuClose ion-item *ngFor="let p of loggedOutPages" (click)="openPage(p)">
+              <button  menuClose ion-item *ngFor="let p of loggedOutPages" (click)="openPage(p)">
                   <ion-icon name="{{p.icon}}" item-left></ion-icon>
                   <ion-img src="{{p.image}}" height="25" item-left></ion-img>
                   {{p.title}}

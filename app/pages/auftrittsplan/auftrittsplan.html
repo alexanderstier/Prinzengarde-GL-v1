@@ -9,16 +9,17 @@
         </ion-title>
     </ion-navbar>
     <ion-toolbar primary no-border-top>
-        <ion-title><ion-img *ngIf="global.logo_termine" width="25" height="30" src="{{global.logo_termine}}"></ion-img>{{title}}</ion-title>
+        <ion-title><ion-img *ngIf="global.logo_auftrittsplan" width="25" height="30" src="{{global.logo_auftrittsplan}}"></ion-img>{{title}}</ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content padding class="termine">
+<ion-content padding class="auftrittsplan">
     <ion-list>
-        <ion-item *ngFor="let termin of termine">
+        <ion-item *ngFor="let termin of auftrittsplan">
             <ion-icon name="calendar" item-left></ion-icon>
             <h4>{{termin.title}}</h4>
             <p>{{global.convertISO8601toDate(termin.datetime)}} | {{termin.location_simple}}</p>
+            <p>{{termin.bodytext}}</p>
         </ion-item>
     </ion-list>
 </ion-content>

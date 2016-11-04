@@ -157,6 +157,12 @@ ion-img[item-left] + .item-inner, ion-img[item-left] + .item-input {
 .modal-content {
   margin-bottom: 25px; }
 
+.mitglieder_menu {
+  border-bottom: none; }
+
+.mitglieder_menu ion-label {
+  padding-left: 8px; }
+
 audio,
 canvas,
 progress,
@@ -9342,11 +9348,22 @@ body {
 .aktuelles .expand_hide {
   display: none; }
 
+.auftrittsplan .item {
+  padding: 8px 4px; }
+
+.auftrittsplan ion-icon[item-left] + .item-inner, .auftrittsplan ion-icon[item-left] + .item-input {
+  margin-left: 4px; }
+
+.auftrittsplan ion-list .item {
+  border-bottom: 1px solid #dedede; }
+
+.auftrittsplan ion-list .item .item-inner {
+  border-bottom: none; }
+
 .jubilaeum .toolbar-title {
   white-space: normal; }
 
 .jubilaeum h2 {
-  font-size: 16px !important;
   color: #E2001A; }
 
 .kontakt ion-label[stacked], .kontakt ion-label[floating] {
@@ -9400,6 +9417,21 @@ body {
 
 .login form .item .item-inner {
   padding-right: 0; }
+
+.mitglieder .item {
+  padding: 8px 4px; }
+
+.mitglieder ion-list .item {
+  border-bottom: 1px solid #dedede; }
+
+.mitglieder ion-list .item .item-inner {
+  border-bottom: none; }
+
+.termine .item {
+  padding: 8px 4px; }
+
+.termine ion-icon[item-left] + .item-inner, .termine ion-icon[item-left] + .item-input {
+  margin-left: 4px; }
 
 @font-face {
   font-family: 'Roboto';

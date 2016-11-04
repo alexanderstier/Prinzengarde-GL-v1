@@ -1,3 +1,11 @@
 .mitglieder {
-
+    .item {
+        padding: 8px 4px;
+    }
+    ion-list .item {
+        border-bottom: 1px solid #dedede;
+    }
+    ion-list .item .item-inner {
+        border-bottom: none;
+    }
 }

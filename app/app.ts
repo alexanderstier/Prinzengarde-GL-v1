@@ -5,6 +5,7 @@ import { Splashscreen, StatusBar } from 'ionic-native';
 import { GlobalVars } from "./providers/global-vars/global-vars";
 
 import { AktuellesPage } from "./pages/aktuelles/aktuelles";
+import { AuftrittsplanPage } from "./pages/auftrittsplan/auftrittsplan";
 import { ImpressumPage } from "./pages/impressum/impressum";
 import { JubilaeumPage } from "./pages/jubilaeum/jubilaeum";
 import { KontaktPage } from "./pages/kontakt/kontakt";
@@ -35,7 +36,8 @@ class PgGlApp {
       { title: "Kontakt", icon: "mail", image: "", component: KontaktPage },
   ];
   loggedInPages: PageObj[] = [
-      { title: "Mitgliederliste", icon: "contact", image: "", component: MitgliederPage }
+      { title: "Mitgliederliste", icon: "contact", image: "", component: MitgliederPage },
+      { title: "Auftrittsplan", icon: "alarm", image: "", component: AuftrittsplanPage }
   ];
   loggedOutPages: PageObj[] = [
       { title: "Login", icon: "key", image: "", component: LoginPage }

@@ -40,7 +40,7 @@ export class KontaktPage {
         this.kontaktForm = formBuilder.group({
             sendername: ['', Validators.compose([Validators.maxLength(30), Validators.pattern('[a-zA-Z ]*'), Validators.required])],
             sendermail: ['', Validators.required],
-            subject: ['Anfrage über die Prinzengarde-App', Validators.required],
+            subject: ['Anfrage Ã¼ber die Prinzengarde-App', Validators.required],
             message: ['', Validators.required]
         });
     }

@@ -6,6 +6,7 @@ export class GlobalVars {
     public logo: string;
     public slogan: string;
     public logo_aktuelles: string;
+    public logo_auftrittsplan: string;
     public logo_impressum: string;
     public logo_jubilaeum: string;
     public logo_kontakt: string;
@@ -23,6 +24,7 @@ export class GlobalVars {
         this.logo = "images/logo.png";
         this.slogan = "images/slogan.png";
         this.logo_aktuelles = "";
+        this.logo_auftrittsplan = "";
         this.logo_impressum = "";
         this.logo_jubilaeum = "images/Icon_Jubilaeum.png";
         this.logo_kontakt = "images/Icon_Kontakt.png";

@@ -227,3 +227,10 @@ ion-img[item-left] + .item-inner, ion-img[item-left] + .item-input {
 .modal-content{
     margin-bottom: 25px;
 }
+
+.mitglieder_menu{
+    border-bottom: none;
+}
+.mitglieder_menu ion-label{
+    padding-left:8px;
+}
