@@ -8946,6 +8946,12 @@ body {
 .termine ion-icon[item-left] + .item-inner, .termine ion-icon[item-left] + .item-input {
   margin-left: 4px; }
 
+.termine ion-list .item {
+  border-bottom: 1px solid #dedede; }
+
+.termine ion-list .item .item-inner {
+  border-bottom: none; }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/roboto-light.ttf");

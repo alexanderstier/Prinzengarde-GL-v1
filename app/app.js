@@ -12,6 +12,7 @@ var core_1 = require("@angular/core");
 var ionic_angular_1 = require("ionic-angular");
 var global_vars_1 = require("./providers/global-vars/global-vars");
 var aktuelles_1 = require("./pages/aktuelles/aktuelles");
+var auftrittsplan_1 = require("./pages/auftrittsplan/auftrittsplan");
 var impressum_1 = require("./pages/impressum/impressum");
 var jubilaeum_1 = require("./pages/jubilaeum/jubilaeum");
 var kontakt_1 = require("./pages/kontakt/kontakt");
@@ -29,7 +30,8 @@ var PgGlApp = (function () {
             { title: "Kontakt", icon: "mail", image: "", component: kontakt_1.KontaktPage },
         ];
         this.loggedInPages = [
-            { title: "Mitgliederliste", icon: "contact", image: "", component: mitglieder_1.MitgliederPage }
+            { title: "Mitgliederliste", icon: "contact", image: "", component: mitglieder_1.MitgliederPage },
+            { title: "Auftrittsplan", icon: "alarm", image: "", component: auftrittsplan_1.AuftrittsplanPage }
         ];
         this.loggedOutPages = [
             { title: "Login", icon: "key", image: "", component: login_1.LoginPage }

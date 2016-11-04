@@ -14,6 +14,11 @@ var global_vars_1 = require("../../providers/global-vars/global-vars");
 var jubilaeum_modal_vorgeschichte_1 = require('./jubilaeum_modal_vorgeschichte');
 var jubilaeum_modal_1966_1 = require('./jubilaeum_modal_1966');
 var jubilaeum_modal_60er_1 = require('./jubilaeum_modal_60er');
+var jubilaeum_modal_70er_1 = require('./jubilaeum_modal_70er');
+var jubilaeum_modal_80er_1 = require('./jubilaeum_modal_80er');
+var jubilaeum_modal_90er_1 = require('./jubilaeum_modal_90er');
+var jubilaeum_modal_2000_1 = require('./jubilaeum_modal_2000');
+var jubilaeum_modal_ausblick_1 = require('./jubilaeum_modal_ausblick');
 var JubilaeumPage = (function () {
     function JubilaeumPage(navController, global) {
         this.navController = navController;
@@ -32,6 +37,26 @@ var JubilaeumPage = (function () {
     JubilaeumPage.prototype.openJubilaeumModal60er = function () {
         var jubilaeumModal60er = ionic_angular_1.Modal.create(jubilaeum_modal_60er_1.JubilaeumModal60er);
         this.navController.present(jubilaeumModal60er);
+    };
+    JubilaeumPage.prototype.openJubilaeumModal70er = function () {
+        var jubilaeumModal70er = ionic_angular_1.Modal.create(jubilaeum_modal_70er_1.JubilaeumModal70er);
+        this.navController.present(jubilaeumModal70er);
+    };
+    JubilaeumPage.prototype.openJubilaeumModal80er = function () {
+        var jubilaeumModal80er = ionic_angular_1.Modal.create(jubilaeum_modal_80er_1.JubilaeumModal80er);
+        this.navController.present(jubilaeumModal80er);
+    };
+    JubilaeumPage.prototype.openJubilaeumModal90er = function () {
+        var jubilaeumModal90er = ionic_angular_1.Modal.create(jubilaeum_modal_90er_1.JubilaeumModal90er);
+        this.navController.present(jubilaeumModal90er);
+    };
+    JubilaeumPage.prototype.openJubilaeumModal2000 = function () {
+        var jubilaeumModal2000 = ionic_angular_1.Modal.create(jubilaeum_modal_2000_1.JubilaeumModal2000);
+        this.navController.present(jubilaeumModal2000);
+    };
+    JubilaeumPage.prototype.openJubilaeumModalAusblick = function () {
+        var jubilaeumModalAusblick = ionic_angular_1.Modal.create(jubilaeum_modal_ausblick_1.JubilaeumModalAusblick);
+        this.navController.present(jubilaeumModalAusblick);
     };
     JubilaeumPage = __decorate([
         core_1.Component({

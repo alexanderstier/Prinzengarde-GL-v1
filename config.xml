@@ -118,7 +118,6 @@
   <preference name="deployment-target" value="8.1" />
   <vs:platformSpecificValues>
     <vs:platformSpecificWidget platformName="windows" version="0.1.0.0">
-      <vs:appxPackageIsForStore>True</vs:appxPackageIsForStore>
     </vs:platformSpecificWidget>
   </vs:platformSpecificValues>
 </widget>

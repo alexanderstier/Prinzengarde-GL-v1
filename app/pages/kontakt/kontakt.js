@@ -33,7 +33,7 @@ var KontaktPage = (function () {
         this.kontaktForm = formBuilder.group({
             sendername: ['', common_1.Validators.compose([common_1.Validators.maxLength(30), common_1.Validators.pattern('[a-zA-Z ]*'), common_1.Validators.required])],
             sendermail: ['', common_1.Validators.required],
-            subject: ['Anfrage �ber die Prinzengarde-App', common_1.Validators.required],
+            subject: ['Anfrage über die Prinzengarde-App', common_1.Validators.required],
             message: ['', common_1.Validators.required]
         });
     }
