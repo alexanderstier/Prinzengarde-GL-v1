@@ -32,7 +32,6 @@ export class AuthService {
                 }
                 else
                     resolve(false);
-
             });
 
         });

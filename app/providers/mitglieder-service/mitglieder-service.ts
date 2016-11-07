@@ -10,10 +10,13 @@ import "rxjs/add/operator/map";
 */
 @Injectable()
 export class MitgliederService {
+
+  http: any;
   data: any;
 
-  constructor(private http: Http) {
-    this.data = null;
+  constructor(http: Http) {
+      this.http = http;
+      this.data = null;
   }
 
   load() {

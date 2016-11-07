@@ -32,12 +32,13 @@ var buildSass = require('ionic-gulp-sass-build');
 var copyHTML = require('ionic-gulp-html-copy');
 var copyFonts = require('ionic-gulp-fonts-copy');
 var copyScripts = require('ionic-gulp-scripts-copy');
+var gulpConcat = require('gulp-concat');
 
 var isRelease = argv.indexOf('--release') > -1;
 
 gulp.task('watch', ['clean'], function(done){
   runSequence(
-    ['sass', 'html', 'fonts', 'scripts'],
+    ['sass', 'html', 'fonts', 'scripts', 'extlibs'],
     function(){
       gulpWatch('app/**/*.scss', function(){ gulp.start('sass'); });
       gulpWatch('app/**/*.html', function(){ gulp.start('html'); });
@@ -48,7 +49,7 @@ gulp.task('watch', ['clean'], function(done){
 
 gulp.task('build', ['clean'], function(done){
   runSequence(
-    ['sass', 'html', 'fonts', 'scripts'],
+    ['sass', 'html', 'fonts', 'scripts', 'extlibs'],
     function(){
       buildBrowserify({
         minify: isRelease,
@@ -61,6 +62,13 @@ gulp.task('build', ['clean'], function(done){
       }).on('end', done);
     }
   );
+});
+
+// Include external Scripts
+gulp.task('extlibs', function () {
+    return gulp.src('www/extlibs/*.js')
+        .pipe(gulpConcat('external-libraries.js'))
+        .pipe(gulp.dest('www/build/js'));
 });
 
 gulp.task('sass', buildSass);

@@ -46,5 +46,6 @@ export class MitgliederPage {
             this.mitgliederFilter = this.mitglieder;
         }
     }
+
 }
  

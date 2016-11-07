@@ -14,6 +14,7 @@
 </ion-header>
 
 <ion-content padding class="mitglieder">
+    <div>Diese Liste enthält alle Mitglieder der Garde deren E-Mail-Adresse uns bekannt ist. Zur Ergänzung fehlender Mitglieder wendet Euch bitte an <a href="mailto:info@prinzengarde-gl.de">info@prinzengarde-gl.de</a>.</div>
     <ion-searchbar (ionInput)="searchMitglieder($event)"></ion-searchbar>
     <ion-list>
         <ion-item *ngFor="let mitglied of mitgliederFilter">
@@ -21,8 +22,8 @@
                 <img src="images/prinzengarde_outline_gold.png"> <!--{{mitglied.image}}-->
             </ion-avatar>
             <h3>{{mitglied.lastName}}, {{mitglied.firstName}}</h3>
-            <p *ngIf="mitglied.email" style="padding: 4px 0;"><ion-icon md="md-mail" style="margin-right: 10px;"></ion-icon> {{mitglied.email}}</p>
-            <p *ngIf="mitglied.telephone" style="padding: 4px 0;"><ion-icon md="md-call" style="margin-right: 10px;"></ion-icon> {{mitglied.telephone}}</p>
+            <p *ngIf="mitglied.email" style="padding: 4px 0;"><ion-icon md="md-mail" style="margin-right: 10px;"></ion-icon> <a href="mailto:{{mitglied.email}}">{{mitglied.email}}</a></p>
+            <p *ngIf="mitglied.telephone" style="padding: 4px 0;"><ion-icon md="md-call" style="margin-right: 10px;"></ion-icon> <a href="tel:{{mitglied.telephone}}">{{mitglied.telephone}}</a></p>
         </ion-item>
     </ion-list>
 </ion-content>

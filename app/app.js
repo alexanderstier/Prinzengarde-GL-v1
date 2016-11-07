@@ -72,5 +72,5 @@ var PgGlApp = (function () {
     ], PgGlApp);
     return PgGlApp;
 }());
-// enableProdMode();
+core_1.enableProdMode();
 ionic_angular_1.ionicBootstrap(PgGlApp, null, { mode: "md" });

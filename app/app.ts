@@ -73,6 +73,6 @@ class PgGlApp {
 
 }
 
-// enableProdMode();
+enableProdMode();
 
 ionicBootstrap(PgGlApp, null, { mode: "md" });

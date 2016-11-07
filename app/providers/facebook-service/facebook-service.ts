@@ -19,9 +19,11 @@ export class FacebookService {
     fields: string = 'id,from{name,id,picture},message,message_tags,story,story_tags,picture,full_picture,link,source,name,caption,description,type,status_type,object_id,created_time,attachments{subattachments},shares,likes{id,name},comments{id,from,message,message_tags,created_time,like_count,comment_count,attachment}';
     limit: number = 20;
     format: string = 'json-strings';
+    http: any;
     data: any;
 
-    constructor(private http: Http) {
+    constructor(http: Http) {
+        this.http = http;
         this.data = null;
     }
 

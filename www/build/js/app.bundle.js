@@ -73,7 +73,7 @@ var PgGlApp = (function () {
     ], PgGlApp);
     return PgGlApp;
 }());
-// enableProdMode();
+core_1.enableProdMode();
 ionic_angular_1.ionicBootstrap(PgGlApp, null, { mode: "md" });
 },{"./pages/aktuelles/aktuelles":2,"./pages/auftrittsplan/auftrittsplan":3,"./pages/impressum/impressum":4,"./pages/jubilaeum/jubilaeum":5,"./pages/kontakt/kontakt":14,"./pages/login/login":15,"./pages/mitglieder/mitglieder":16,"./pages/termine/termine":17,"./providers/global-vars/global-vars":21,"@angular/core":170,"ionic-angular":434}],2:[function(require,module,exports){
 "use strict";
@@ -754,7 +754,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-require("rxjs/add/operator/map");
+require('rxjs/add/operator/map');
 /*
   Generated class for the AuftrittsplanService provider.
 
@@ -867,7 +867,6 @@ require('rxjs/add/operator/map');
 */
 var FacebookService = (function () {
     function FacebookService(http) {
-        this.http = http;
         this.access_token = '1813040312316525|X7DwKIwfsrzMCqo92ICruO-BkyM'; //YOUR_ACCESS_TOKEN_HERE
         this.page_id = 'PrinzengardeGL'; // YOUR_PAGE_ID_HERE
         this.pagetype = 'page'; // 'page' or 'group'
@@ -876,6 +875,7 @@ var FacebookService = (function () {
         this.fields = 'id,from{name,id,picture},message,message_tags,story,story_tags,picture,full_picture,link,source,name,caption,description,type,status_type,object_id,created_time,attachments{subattachments},shares,likes{id,name},comments{id,from,message,message_tags,created_time,like_count,comment_count,attachment}';
         this.limit = 20;
         this.format = 'json-strings';
+        this.http = http;
         this.data = null;
     }
     FacebookService.prototype.load = function () {

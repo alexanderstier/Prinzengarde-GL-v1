@@ -20,6 +20,7 @@ var MitgliederPage = (function () {
         this.nav_title = "Mitgliederliste";
         this.title = "Mitgliederliste";
         this.loadMitglieder();
+        this.vCardObj = new jsVCard();
     }
     MitgliederPage.prototype.loadMitglieder = function () {
         var _this = this;
@@ -42,6 +43,24 @@ var MitgliederPage = (function () {
             this.mitgliederFilter = this.mitglieder;
         }
     };
+    MitgliederPage.prototype.createVCard = function (mitgliedID) {
+        //set properties 
+        this.vCardObj.firstName = 'Eric';
+        this.vCardObj.middleName = 'J';
+        this.vCardObj.lastName = 'Nesser';
+        this.vCardObj.organization = 'ACME Corporation';
+        this.vCardObj.photo.attachFromUrl('https://avatars2.githubusercontent.com/u/5659221?v=3&s=460', 'JPEG');
+        this.vCardObj.workPhone = '312-555-1212';
+        this.vCardObj.birthday = new Date('01-01-1985');
+        this.vCardObj.title = 'Software Developer';
+        this.vCardObj.url = 'https://github.com/enesser';
+        this.vCardObj.note = 'Notes on Eric';
+        //save to file 
+        //this.vCard.saveToFile('./eric-nesser.vcf');
+        //get as formatted string 
+        console.log(this.vCardObj.getFormattedString());
+    };
+    ;
     MitgliederPage = __decorate([
         core_1.Component({
             templateUrl: "build/pages/mitglieder/mitglieder.html",
