@@ -24,7 +24,7 @@ var AuthService = (function () {
         headers.append('Content-Type', 'application/x-www-form-urlencoded');
         //console.log(creds);
         return new Promise(function (resolve) {
-            _this.http.get('http://www.prinzengarde-gl.de/' + creds).subscribe(function (data) {
+            _this.http.get('https://www.prinzengarde-gl.de/' + creds).subscribe(function (data) {
                 console.log(data.json().result);
                 if (data.json().result == "login successfull") {
                     window.localStorage.setItem('prinzengarde', data.json().token);

@@ -22,7 +22,7 @@ export class AuthService {
 
         return new Promise(resolve => {
 
-            this.http.get('http://www.prinzengarde-gl.de/' + creds).subscribe(data => {
+            this.http.get('https://www.prinzengarde-gl.de/' + creds).subscribe(data => {
                 console.log(data.json().result);
                 if (data.json().result == "login successfull") {
                     window.localStorage.setItem('prinzengarde', data.json().token);

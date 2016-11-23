@@ -19,7 +19,6 @@ require('rxjs/add/operator/map');
 */
 var FacebookService = (function () {
     function FacebookService(http) {
-        this.http = http;
         this.access_token = '1813040312316525|X7DwKIwfsrzMCqo92ICruO-BkyM'; //YOUR_ACCESS_TOKEN_HERE
         this.page_id = 'PrinzengardeGL'; // YOUR_PAGE_ID_HERE
         this.pagetype = 'page'; // 'page' or 'group'
@@ -28,6 +27,7 @@ var FacebookService = (function () {
         this.fields = 'id,from{name,id,picture},message,message_tags,story,story_tags,picture,full_picture,link,source,name,caption,description,type,status_type,object_id,created_time,attachments{subattachments},shares,likes{id,name},comments{id,from,message,message_tags,created_time,like_count,comment_count,attachment}';
         this.limit = 20;
         this.format = 'json-strings';
+        this.http = http;
         this.data = null;
     }
     FacebookService.prototype.load = function () {

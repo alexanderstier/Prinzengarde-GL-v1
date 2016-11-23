@@ -33,7 +33,7 @@ var TerminlisteService = (function () {
             // We're using Angular Http provider to request the data,
             // then on the response it'll map the JSON data to a parsed JS object.
             // Next we process the data and resolve the promise with the new data.
-            _this.http.get("http://www.prinzengarde-gl.de/typo3conf/ext/cus_app_connect/Classes/Utility/Terminliste.php")
+            _this.http.get("https://www.prinzengarde-gl.de/typo3conf/ext/cus_app_connect/Classes/Utility/Terminliste.php")
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 // we've got back the raw data, now generate the core schedule data

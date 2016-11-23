@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+require('rxjs/add/operator/map');
 /*
   Generated class for the AuftrittsplanService provider.
 
@@ -32,7 +33,7 @@ var AuftrittsplanService = (function () {
             // We're using Angular Http provider to request the data,
             // then on the response it'll map the JSON data to a parsed JS object.
             // Next we process the data and resolve the promise with the new data.
-            _this.http.get("http://www.prinzengarde-gl.de/typo3conf/ext/cus_app_connect/Classes/Utility/Auftrittsplan.php")
+            _this.http.get("https://www.prinzengarde-gl.de/typo3conf/ext/cus_app_connect/Classes/Utility/Auftrittsplan.php")
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 // we've got back the raw data, now generate the core schedule data
